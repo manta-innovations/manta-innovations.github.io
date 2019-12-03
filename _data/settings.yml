@@ -1,17 +1,17 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross - Jekyll Portfolio Template
+title: Joel Lutman - Manta Innovations
 logo: logo.png
-email: steve.fruits@email.com
-phone: +880 2544 658 256
-address: 125/A, CA Commercial Area, California, USA
+email: manta.innovations@gmail.com
+phone: +44 7969 316 432
+address: 50 Knights Tower, 14 Wharf Street, London, SE8 3FW
 
 menu:
-- {name: About, link: '/about/'}
-- {name: Blog, link: '/blog/'}
-- {name: Portfolio, link: '/portfolio/'}
-- {name: Contact, link: '/contact/'}
+- {name: About, link: '/about'}
+- {name: Blog, link: '/blog'}
+- {name: Portfolio, link: '/portfolio'}
+- {name: Contact, link: '/contact'}
 
 
 #-------------------------------
@@ -35,7 +35,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Hi! I’m <br> Joel Lutman <br> Software Engineer
 
 social:
 - {icon: "ti-facebook", link: "#"}
@@ -49,7 +49,7 @@ social:
 
 # About Section
 blurb:
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 
 blurb-btn-link: '/about'
 blurb-btn-name: know more
@@ -72,19 +72,19 @@ work-process:
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
 
-# My Team Section
-team:
-  - title : "Jack Schenziwe"
-    image : "assets/images/team/member-1.png"
-    designation : "Project Manager"
-    
-  - title : "Julias Carlie"
-    image : "assets/images/team/member-2.png"
-    designation : "Web Developer"
-    
-  - title : "John Doe"
-    image : "assets/images/team/member-3.png"
-    designation : "Designer"
+## My Team Section
+#team:
+#  - title : ""
+#    image : "assets/images/team/"
+#    designation : ""
+#
+#  - title : ""
+#    image : "assets/images/team/"
+#    designation : ""
+#
+#  - title : ""
+#    image : "assets/images/team/"
+#    designation : ""
 
 
 #-------------------------------
@@ -92,20 +92,21 @@ team:
 
 skills-title: Skills
 skills:
-- {name: Web Design, color: '#fdb157', value: '90%'}
-- {name: Logo Design, color: '#9473e6', value: '60%'}
-- {name: After Effects, color: '#bdecf6', value: '80%'}
-- {name: Web App, color: '#ffbcaa', value: '70%'}
+- {name: Cloud Architecture, color: '#fdb157', value: '90%'}
+- {name: Big Data, color: '#9473e6', value: '60%'}
+- {name: Machine Learning, color: '#9473e6', value: '60%'}
+- {name: DevOps, color: '#bdecf6', value: '80%'}
+- {name: Web Apps, color: '#ffbcaa', value: '70%'}
 
 
 #-------------------------------
-# Exprerience Section
+# Experience Section
 
 experience-title: Experience
 experience:
-- {name: Junior UX Designer, icon: 'icon-1.png', date: 'Jan 2007 - Feb 2009', organization: 'WEBEX'}
-- {name: UX & UI Designer, icon: 'icon-2.png', date: 'Mar 2009 - Aug 2014', organization: 'AUGMEDIX'}
-- {name: Senior UI Designer, icon: 'icon-3.png', date: 'Sep 2014 - Present', organization: 'THEMEFISHER'}
+- {name: Data Scientist & Engineer, icon: 'icon-1.png', date: 'May 2015 - Apr 2018', organization: 'BAE SYSTEMS AI'}
+- {name: Senior Python Developer, icon: 'icon-2.png', date: 'Mar 2018 - Feb 2019', organization: 'LIMEJUMP'}
+- {name: Director & Software Engineer, icon: 'icon-3.png', date: 'Jan 2019 - Present', organization: 'MANTA INNOVATIONS LTD'}
 
 
 #-------------------------------
@@ -113,10 +114,10 @@ experience:
 
 education-title: Education
 education:
-- {name: Marters in UX Design, date: '2006', organization: 'Masassusets Institute of Technology'}
-- {name: Honours in Fine Arts, date: '2004', organization: 'Harvard University'}
-- {name: Higher Secondary Certificat, date: '2000', organization: 'Cardiff School'}
-- {name: Secondary School Certificate, date: '1998', organization: 'Cardiff School'}
+- {name: Masters in Mathematical Biology, date: '2012', organization: 'University of Bath'}
+- {name: 1st Class Honours in Mathematics, date: '2010', organization: 'University of Sussex'}
+- {name: "ABB in A-Level Maths, Further Maths, Law", date: '2007', organization: 'Worthing Sixth Form College'}
+- {name: 10 GCSE's A-C, date: '2005', organization: 'Chatsmore Catholic High School'}
 
 
 #-------------------------------
@@ -125,22 +126,40 @@ education:
 services-title: Services
 services:
 - {
-    name: UI Design,
+    name: Web Apps,
     icon: ti-palette,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     active: # Add true to select section
   }
 - {
-    name: UX Design,
+    name: Big Data,
     icon: ti-vector,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     active: true # Add true to select section
   }
 - {
-    name: Interaction Design,
+    name: Cloud Architecture,
     icon: ti-panel,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     active: # Add true to select section
+  }
+- {
+  name: Machine Learning,
+  icon: ti-panel,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  active: # Add true to select section
+  }
+- {
+  name: DevOps,
+  icon: ti-panel,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  active: # Add true to select section
+  }
+- {
+  name: Review & Train,
+  icon: ti-panel,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  active: # Add true to select section
   }
 
 
@@ -169,67 +188,67 @@ portfolio-home-items:
 # Portfolio Page
 portfolio-label:
 - {
-    title : "UI/UX Design",
-    type : "design"
+    title : "DATA",
+    type : "data"
   }
 - {
-    title : "BRANDING",
-    type : "branding"
+    title : "ARCHITECTURE",
+    type : "architecture"
   }
 - {
-    title : "ILLUSTRATION",
-    type : "illustration"
+    title : "WEB",
+    type : "web"
   }
 
 portfolio-items:
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
     portfolio-type:
-     - type: "design"
-     - type: "illustration"
+     - type: "data"
+     - type: "architecture"
       
   - image : "assets/images/portfolio/item-2.png"
     url: "#"
     portfolio-type:
-      - type: "branding"
+      - type: "architecture"
       
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "web"
       
   - image : "assets/images/portfolio/item-6.png"
     url: "#"
     portfolio-type:
-      - type: "design"
-      - type: "branding"
+      - type: "data"
+      - type: "web"
       
   - image : "assets/images/portfolio/item-8.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "architecture"
       
   - image : "assets/images/portfolio/item-5.png"
     url: "#"
     portfolio-type:
-      - type: "design"
+      - type: "web"
       
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
     portfolio-type:
-      - type: "branding"
+      - type: "data"
       
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
     portfolio-type:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
+      - type: "web"
+      - type: "architecture"
+      - type: "data"
       
   - image : "assets/images/portfolio/item-7.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "architecture"
 
 
 #-------------------------------
@@ -290,4 +309,4 @@ client-slider-items:
 # Contact Section
 
 contact-title: Contact Info
-contact-email: steve.fruits@email.com
+contact-email: manta.innovations@gmail.com
