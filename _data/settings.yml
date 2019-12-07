@@ -2,7 +2,7 @@
 # General Site Settings
 
 title: Joel Lutman - Manta Innovations
-logo: logo.png
+logo: logo_small.png
 email: manta.innovations@gmail.com
 phone: +44 7969 316 432
 address: 50 Knights Tower, 14 Wharf Street, London, SE8 3FW
@@ -92,11 +92,10 @@ work-process:
 
 skills-title: Skills
 skills:
-- {name: Cloud Architecture, color: '#fdb157', value: '90%'}
-- {name: Big Data, color: '#9473e6', value: '60%'}
-- {name: Machine Learning, color: '#9473e6', value: '60%'}
-- {name: DevOps, color: '#bdecf6', value: '80%'}
-- {name: Web Apps, color: '#ffbcaa', value: '70%'}
+- {name: Big Data & ML, color: '#f44336', value: '90%'}
+- {name: Cloud Architecture, color: '#FF9800', value: '80%'}
+- {name: DevOps, color: '#8BC34A', value: '75%'}
+- {name: Web Apps, color: '#03A9F4', value: '70%'}
 
 
 #-------------------------------
@@ -126,40 +125,40 @@ education:
 services-title: Services
 services:
 - {
-    name: Web Apps,
-    icon: ti-palette,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: Big Data,
+    icon: ti-server,
+    description: "Big data solutions & frameworks for large scale distributed data processing and analytics; based on Apache Spark.",
     active: # Add true to select section
   }
 - {
-    name: Big Data,
-    icon: ti-vector,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    name: Machine Learning,
+    icon: ti-panel,
+    description: "Machine Learning solutions from simple regression through to Neural Networks; based on SKLearn and TensorFlow.",
     active: true # Add true to select section
   }
 - {
     name: Cloud Architecture,
-    icon: ti-panel,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    icon: ti-cloud,
+    description: "Serverless cloud solutions reducing the risk of security vulnerabilities and platform outages; scripted with Terraform.",
     active: # Add true to select section
   }
 - {
-  name: Machine Learning,
-  icon: ti-panel,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  name: DevOps & Platform Eng,
+  icon: ti-infinite,
+  description: "Automated DevOps solutions following best practice to ensure bugs never touch live systems; using docker and kubernetes.",
+  active: true # Add true to select section
+  }
+- {
+  name: Web Apps,
+  icon: ti-palette,
+  description: "Full stack web apps from simple static websites through to dynamic sites backed by SQL & NoSQL databases.",
   active: # Add true to select section
   }
 - {
-  name: DevOps,
-  icon: ti-panel,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  active: # Add true to select section
-  }
-- {
-  name: Review & Train,
-  icon: ti-panel,
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  active: # Add true to select section
+  name: Review & Upskill,
+  icon: ti-check-box,
+  description: "Independent code appraisal and vulnerability reviews. Take it further by ensuring your teams know the latest tools and techniques.",
+  active: true # Add true to select section
   }
 
 
