@@ -185,52 +185,57 @@ portfolio-label:
   }
 
 portfolio-items:
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+
+  - image : ""
+    url: "https://github.com/jhole89/simple-CRUD-app"
     portfolio-type:
-     - type: "data"
-     - type: "architecture"
-      
-  - image : "assets/images/portfolio/item-2.png"
-    url: "#"
-    portfolio-type:
-      - type: "architecture"
-      
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
+      - type: "web"
+
+  - image : "assets/images/portfolio/github_site.png"
+    url: "https://github.com/jhole89/jhole89.github.io"
     portfolio-type:
       - type: "web"
       
-  - image : "assets/images/portfolio/item-6.png"
-    url: "#"
+  - image : "assets/images/portfolio/replate.jpg"
+    url: "https://github.com/jhole89/Leftovers"
+    portfolio-type:
+      - type: "data"
+      - type: "architecture"
+      
+  - image : "assets/images/portfolio/tensorflow_android.png"
+    url: "https://github.com/jhole89/tensorflow-classifier-android"
+    portfolio-type:
+      - type: "data"
+      - type: "architecture"
+      
+  - image : "assets/images/portfolio/djikstra.png"
+    url: "https://github.com/jhole89/osm-router"
+    portfolio-type:
+      - type: "data"
+      
+  - image : "assets/images/portfolio/neural_network.png"
+    url: "https://github.com/jhole89/convnet-image-classifier"
+    portfolio-type:
+      - type: "data"
+      
+  - image : "assets/images/portfolio/chatbot.png"
+    url: "https://github.com/jhole89/you-talkin-to-me"
     portfolio-type:
       - type: "data"
       - type: "web"
       
-  - image : "assets/images/portfolio/item-8.png"
-    url: "#"
-    portfolio-type:
-      - type: "architecture"
-      
-  - image : "assets/images/portfolio/item-5.png"
-    url: "#"
-    portfolio-type:
-      - type: "web"
-      
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image : "assets/images/portfolio/tf_cancer.png"
+    url: "https://github.com/jhole89/classifying-cancer"
     portfolio-type:
       - type: "data"
       
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
+  - image : "assets/images/portfolio/twitter-analytics.png"
+    url: "https://github.com/jhole89/tweet-analyser"
     portfolio-type:
-      - type: "web"
-      - type: "architecture"
       - type: "data"
-      
-  - image : "assets/images/portfolio/item-7.png"
-    url: "#"
+
+  - image : "assets/images/portfolio/data_sci_env.png"
+    url: "https://github.com/jhole89/DataScienceDevEnvironment"
     portfolio-type:
       - type: "architecture"
 
