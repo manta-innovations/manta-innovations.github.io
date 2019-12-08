@@ -3,16 +3,12 @@ layout: about
 title: About Me
 author: Joel Lutman
 image: assets/images/about/author.jpg
-signature: assets/images/about/signature.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.
-
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+A highly technical Software Engineer specializing in Big Data, Machine Learning, and Cloud Architecture. 
+I am driven by interesting challenges and constantly seek to further my own skills in areas of interest
+including Big Data, Machine Learning, Neural Networks, Distributed Computing, Computer Vision, AI,
+IoT, Infrastructure, and more. I am an advocate of clean code and functional design principles and hold
+myself and those I work with to the highest of standards. Having worked within both large and small
+organisations, I am now building out Manta Innovations Ltd as a software consultancy and looking for
+friendly clients with interesting problems that we can assist with solving.

@@ -38,10 +38,11 @@ hero:
   hero-title: Hi! I’m <br> Joel Lutman <br> Software Engineer
 
 social:
-- {icon: "ti-facebook", link: "#"}
-- {icon: "ti-instagram", link: "#"}
-- {icon: "ti-dribbble", link: "#"}
-- {icon: "ti-twitter", link: "#"}
+- {icon: "ti-facebook", link: "https://www.facebook.com/JoelLutman"}
+- {icon: "ti-github", link: "https://github.com/jhole89"}
+- {icon: "ti-twitter", link: "https://twitter.com/jhole89"}
+- {icon: "ti-stack-overflow", link: "https://stackoverflow.com/users/5094147"}
+- {icon: "ti-linkedin ", link: "https://www.linkedin.com/in/joellutman"}
 
 
 #-------------------------------
@@ -59,33 +60,17 @@ blurb-btn-name: know more
 
 # Work Process Section
 work-process:
-  - title : "Research and Plan"
+  - title : "Understand and Plan"
     icon : "assets/images/icons/plan.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    
+    content : "Before trying to solve we need to understand what we are aiming to achieve, only then can we establish what patterns would be best suited for the problem we are trying to solve."
+
   - title : "Design and Develop"
     icon : "assets/images/icons/design.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content : "Once we understand the problem, we can start designing any architecture and developing a solution. Iterating is key here and we should establish a fast feedback loop with users and automated systems."
     
-  - title : "Deliver"
+  - title : "Deliver and Iterate"
     icon : "assets/images/icons/print.png"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-
-## My Team Section
-#team:
-#  - title : ""
-#    image : "assets/images/team/"
-#    designation : ""
-#
-#  - title : ""
-#    image : "assets/images/team/"
-#    designation : ""
-#
-#  - title : ""
-#    image : "assets/images/team/"
-#    designation : ""
-
+    content : "No one likes long delivery cycles, least of all developers. Short and frequently cycles gives us the best way to gain feedback, flush bugs, and improve. No system if perfect, but we can try."
 
 #-------------------------------
 # Skills Section
@@ -249,60 +234,6 @@ portfolio-items:
     portfolio-type:
       - type: "architecture"
 
-
-#-------------------------------
-# Testimonials Section
-
-testimonial-items:
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation : "CEO, Funder"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-
-#-------------------------------
-# Client Slider Section
-
-client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-    
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
 
 #-------------------------------
 # Contact Section
