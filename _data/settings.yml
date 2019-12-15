@@ -5,7 +5,7 @@ title: Joel Lutman - Manta Innovations
 logo: logo_small.png
 email: manta.innovations@gmail.com
 phone: +44 7969 316 432
-address: 50 Knights Tower, 14 Wharf Street, London, SE8 3FW
+address: London, SE8 3FW
 
 menu:
 - {name: About, link: '/about'}
@@ -22,13 +22,13 @@ menu:
 
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
-google-analytics: # UA-XXXXXX-X
+google-analytics: UA-121436590-1
 
 
 #-------------------------------
 # Comment Section (Disqus)
 
-disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: jhole89-github
 
 
 #-------------------------------
@@ -49,7 +49,11 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb:
+blurb: "Hi, I'm Joel, a software engineer, big data veteren, ML enthusiast, infrastructure specialist, serverless fanboy,
+and gaming hobbiest. I enjoy designing and iterating solutions for new challenges with fast feedback loops. I don't
+buy in to traditional release cycles, but believe in automating manual processes to ensure every commit is release worthy
+and provides value. I believe in flat structures, openness across teams, sustainable coding, best practice, and no
+compromises on quality."
 
 
 blurb-btn-link: '/about'
@@ -153,20 +157,14 @@ services:
 
 # Portfolio Home Section
 portfolio-home-items:
-  - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image : "assets/images/portfolio/tensorflow_android.png"
+    url: "https://github.com/jhole89/tensorflow-classifier-android"
     
-  - image : "assets/images/portfolio/item-2.png"
-    url: "#"
+  - image : "assets/images/portfolio/neural_network.png"
+    url: "https://github.com/jhole89/convnet-image-classifier"
     
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
-    
-  - image : "assets/images/portfolio/item-4.png"
-    url: "#"
-    
-  - image : "assets/images/portfolio/item-5.png"
-    url: "#"
+  - image : "assets/images/portfolio/tf_cancer.png"
+    url: "https://github.com/jhole89/classifying-cancer"
 
 
 # Portfolio Page
@@ -186,7 +184,7 @@ portfolio-label:
 
 portfolio-items:
 
-  - image : ""
+  - image : "assets/images/portfolio/crud.jpg"
     url: "https://github.com/jhole89/simple-CRUD-app"
     portfolio-type:
       - type: "web"
