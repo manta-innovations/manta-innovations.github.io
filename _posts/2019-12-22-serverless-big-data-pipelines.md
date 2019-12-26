@@ -48,11 +48,24 @@ to address.
 
 Now I know that seemed complex, with lots going on, and lots of parallel workflows, but look what we've been able to 
 achieve without writing much code at all - the only parts to this that actually require us to write application code are
-our Sourcing Lambda (1), Spark ETL (8), View Lambda (11), and Sagemaker Prediction (12); apart from that everything else
-remains managed services which just need to be configured, ideally via a scripting tool such as Terraform. This 
+our Sourcing Lambda (1), Spark ETL (8), View Lambda (11), and Sagemaker Script (12); apart from that everything else
+remains a managed service which just need to be configured, ideally via a scripting tool such as Terraform. This 
 architecture design gives us many benefits now, we are able to:
+* Ingest files from any external sources, lang them in native format to S3, transform them with business logic into 
+parquet (an efficient, query-able binary format) and write back to S3, use the new data to predict using an ML model and
+store the results back to S3
+* Persist all data to S3 and use AWS Glue Cralwers and AWS Athena to query the data at any stage
 * Develop further pipelines quickly and in parallel by splitting the Sourcing Lambda, Spark ETL, View Lambda, and 
-Sagemaker scripts, into individual repositories and treated as 
+Sagemaker Scripts, into individual repositories
+* Treating each ETL stage as a microservice which only requires data on S3 as its interface between services.
+* Capture any error's across the entire stack and route the error to a SNS topic, then onto any support team registered
+to that topic
+* Inspect any file movement or service state via a simple query or HTTP request to DynamoDB
+* Tie each stage neatly together without having to worry about orchestrating times
+* Orchestrate the entire pipeline on a CRON schedule
+* Impose service level timeouts
+* Ability to recreate services without worrying about underlying infrastructure
+ 
 
 
 
