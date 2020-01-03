@@ -30,16 +30,16 @@ diagram above, we illustrate a simple Big Data workflow of sourcing data and wri
 from source format to Parquet, and using a pre-trained Machine Learning model to predict based on the new data.<sup>[5]</sup> 
 This may seem complex with lots of diverging parallel workflows, but look what we've been able to achieve without 
 writing much code at all - the only parts to this that actually require us to write application code are our Sourcing 
-Lambda (1), Spark ETL (8), View Lambda (11), and Sagemaker Script (12); apart from that everything else remains a fully 
-managed service which just need to be configured via a scripting tool such as Terraform. With such an architecture we 
-are able to:
+Lambda (1), Spark ETL (8), View Lambda (11), and Sagemaker Script (12), all of which may be less than 100 lines of code;
+apart from that everything else remains a serverless service which just need to be configured via a scripting tool such 
+as Terraform. With such an architecture we are able to:
 
 * Ingest files from any external sources, lang them in native format to S3, transform them with business logic into 
 parquet (an efficient, query-able binary format) and write back to S3, use the new data to predict using an ML model and
 store the results back to S3
-* Persist all data to S3 and use AWS Glue Cralwers and AWS Athena to query the data at any stage
+* Persist all data to S3 and use AWS Glue Crawlers and AWS Athena to query the data at any stage
 * Develop further pipelines quickly and in parallel by splitting the Sourcing Lambda, Spark ETL, View Lambda, and 
-Sagemaker Scripts, into individual repositories
+Sagemaker Scripts into individual repositories
 * Treat each ETL stage as a microservice which only requires data on S3 as its interface between services
 * Capture any error's across the entire stack and route the error to a SNS topic, then onto any support team registered
 to that topic
@@ -49,13 +49,28 @@ to that topic
 * Orchestrate the entire pipeline on a CRON schedule or via event triggers
 * Impose service level timeouts
 * Ability to recreate services without worrying about underlying infrastructure (via Terraform)
+* Ability for non technical staff to monitor ETL workflows via an accessible UI
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/asl_example.png){:class="img-fluid rounded float"}
 
 Comparing this to a traditional single stack server based architecture, we would lose the flexibility and fast 
-development times that our ETL stage based microservices give us, have to manage 
+development times that our ETL stage based microservices give us; have to manage numerous servers, clusters, and 
+docker containers to run the necessary lambda and spark scripts; code in custom error handling to each service and 
+trigger an email alert which would also need to be managed; manage and configure any databases for multi zone 
+replication and fail-over; and run a number of distributed Hadoop applications. On top of all of this we would also lack
+any UI to give developers or engineers any feedback or way of inspecting the state of an ETL workflow, as can be seen 
+below.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/state_machines.png){:class="img-fluid rounded float mr-5 mb-2"}
 
-
-
+Not all of these benefits are not limited to just AWS Step Functions. If we wanted to achieve the benefits of 
+micro-services, scheduling, and monitoring via UI, we could use a tool such as Luigi, Airflow, or Nifi; however these 
+are not serverless and thus would rely on running on top of EC2 instances which in turn would have to be maintained - 
+if the airflow/luigi/nifi server were to go offline our entire stack would be non-functional, which is not acceptable
+to any high performing business, and still lacks many of the other benefits discussed. Thus the use of AWS Step 
+Functions can be a powerful and reliable tool in leveraging big data within the serverless framework and should not be
+overlooked for anyone exploring orchestration of big data pipelines on AWS, which in conjunction with the serverless
+framework, can enable us to deliver huge value to clients without the traditional headaches of big data architecture.
 
 <sup>[1] AWS Lambda is priced at $0.20 per 1M requests, $0.000016667 for every GB-second (EU-Ireland region); and  natively 
 supports runtime's of Java, Go, PowerShell, Node.js, C#, Python, and Ruby, along wide a Runtime API which allows you to 
@@ -70,9 +85,9 @@ per million read request units, and $0.283 per GB-month storage (EU-Ireland regi
 <sup>[4] AWS Neptune is a NoSQL graph database priced at $0.10 per GB-month storage and $0.22 per 1 million requests I/O
 (EU-Ireland region).</sup>
 
-<sup>[5] We achieve this by sourcing data from a number of external systems (API, FTP, SQL DB, FileSystem, Queue) via a 
-lambda (1) and loading this in its raw format to (2) an S3 bucket, our datalake's landing area, whilst recording any 
-files processed or state to (3) DynamoDB. Once this stage is complete the Step Function triggers two parallel 
+<sup>[5] In detail, we achieve this by sourcing data from a number of external systems (API, FTP, SQL DB, FileSystem, 
+Queue) via a lambda (1) and loading this in its raw format to (2) an S3 bucket, our datalake's landing area, whilst 
+recording any files processed or state to (3) DynamoDB. Once this stage is complete the Step Function triggers two parallel 
 workstreams, one triggering an AWS Glue Crawler (4) to crawl the landing bucket and update the AWS Glue Catalog (5), 
 which in turn makes the data available to SQL-like querying via AWS Athena (6) for data consumers (7); whilst the other 
 workstream starts an AWS Glue job (8) using Apache Spark to ETL the source data from it's raw format in the landing S3 
