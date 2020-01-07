@@ -34,44 +34,44 @@ Lambda (1), Spark ETL (8), View Lambda (11), and Sagemaker Script (12), all of w
 apart from that everything else remains a serverless service which just need to be configured via a scripting tool such 
 as Terraform. With such an architecture we are able to:
 
-* Ingest files from any external sources, lang them in native format to S3, transform them with business logic into 
-parquet (an efficient, query-able binary format) and write back to S3, use the new data to predict using an ML model and
-store the results back to S3
+![post-thumb]({{site.baseurl}}/assets/images/blog/asl_example.png){:class="img-fluid rounded float-right" :height="auto" width="50%"}
+
+* Ingest files from any external sources, land them to S3, transform them with business logic into parquet and write 
+back to S3, use the data to predict using an ML model and store the results back to S3
 * Persist all data to S3 and use AWS Glue Crawlers and AWS Athena to query the data at any stage
 * Develop further pipelines quickly and in parallel by splitting the Sourcing Lambda, Spark ETL, View Lambda, and 
 Sagemaker Scripts into individual repositories
 * Treat each ETL stage as a microservice which only requires data on S3 as its interface between services
-* Capture any error's across the entire stack and route the error to a SNS topic, then onto any support team registered
-to that topic
+* Handle any error's or timeouts across the entire stack, route the error to a SNS topic, then onto any support team
 * Configure retries at a per service or entire stack level or at different rates
 * Inspect any file movement or service state via a simple query or HTTP request to DynamoDB
 * Tie each stage neatly together without having to worry about orchestrating times
 * Orchestrate the entire pipeline on a CRON schedule or via event triggers
-* Impose service level timeouts
 * Ability to recreate services without worrying about underlying infrastructure (via Terraform)
-* Ability for non technical staff to monitor ETL workflows via an accessible UI
+* Ability for non technical staff to monitor ETL workflows via UI
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/asl_example.png){:class="img-fluid rounded float"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/step_func_ui.png){:class="img-fluid rounded float-left" :height="auto" width="50%"}
 
+<br/><br/><br/>
 Comparing this to a traditional single stack server based architecture, we would lose the flexibility and fast 
 development times that our ETL stage based microservices give us; have to manage numerous servers, clusters, and 
-docker containers to run the necessary lambda and spark scripts; code in custom error handling to each service and 
-trigger an email alert which would also need to be managed; manage and configure any databases for multi zone 
-replication and fail-over; and run a number of distributed Hadoop applications. On top of all of this we would also lack
-any UI to give developers or engineers any feedback or way of inspecting the state of an ETL workflow, as can be seen 
-below.
+docker containers to run the necessary services; code in custom error handling to each service and trigger an email 
+alert (which would also need to be managed); manage and configure any databases for multi zone replication and 
+fail-over; and run a number of distributed Hadoop applications. On top of all of this we would also lack any UI to give 
+developers or engineers any feedback or way of inspecting the state of an ETL workflow.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/state_machines.png){:class="img-fluid rounded float mr-5 mb-2"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/state_machines_private.png){:class="img-fluid rounded float mr-5 mb-2"}
 
-Not all of these benefits are not limited to just AWS Step Functions. If we wanted to achieve the benefits of 
-micro-services, scheduling, and monitoring via UI, we could use a tool such as Luigi, Airflow, or Nifi; however these 
-are not serverless and thus would rely on running on top of EC2 instances which in turn would have to be maintained - 
-if the airflow/luigi/nifi server were to go offline our entire stack would be non-functional, which is not acceptable
-to any high performing business, and still lacks many of the other benefits discussed. Thus the use of AWS Step 
+It's worth pointing out that some of these benefits are not limited to just AWS Step Functions. We could achieve the 
+benefits of micro-services, scheduling, and UI, via a tool such as Luigi, Airflow, or Nifi; however these are not 
+serverless as rely on running on top of EC2 instances which in turn would have to be maintained - if the server were to 
+go offline our entire stack would be non-functional, which is not acceptable to any high performing business, and still 
+lacks many of the other benefits discussed such as stack level error and timeout handling. Thus the use of AWS Step 
 Functions can be a powerful and reliable tool in leveraging big data within the serverless framework and should not be
 overlooked for anyone exploring orchestration of big data pipelines on AWS, which in conjunction with the serverless
 framework, can enable us to deliver huge value to clients without the traditional headaches of big data architecture.
 
+<br/>
 <sup>[1] AWS Lambda is priced at $0.20 per 1M requests, $0.000016667 for every GB-second (EU-Ireland region); and  natively 
 supports runtime's of Java, Go, PowerShell, Node.js, C#, Python, and Ruby, along wide a Runtime API which allows you to 
 use any additional programming languages.</sup>
