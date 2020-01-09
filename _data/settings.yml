@@ -34,11 +34,12 @@ google-analytics: UA-121436590-1
 # Hero Section
 
 hero:
-  hero-title: Manta Innovations Ltd <font size="5">Software consultancy solutions for Big Data, DevOps, and Cloud problems</font>
+  hero-title: Manta Innovations Ltd <font size="5"><br>Big data, DevOps, and Cloud consultancy solutions</font>
 
 social:
 - {icon: "ti-github", link: "https://github.com/jhole89"}
 - {icon: "ti-twitter", link: "https://twitter.com/jhole89"}
+- {icon: "ti-stack-overflow", link: "https://stackoverflow.com/users/5094147"}
 - {icon: "ti-linkedin ", link: "https://www.linkedin.com/in/joellutman"}
 
 
