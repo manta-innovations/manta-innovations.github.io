@@ -34,7 +34,7 @@ google-analytics: UA-121436590-1
 # Hero Section
 
 hero:
-  hero-title: Manta Innovations Ltd <br> <sup><sub>Software Made Simple</sub></sup>
+  hero-title: Manta Innovations Ltd <font size="5">Software consultancy solutions for Big Data, DevOps, and Cloud problems</font>
 
 social:
 - {icon: "ti-github", link: "https://github.com/jhole89"}
