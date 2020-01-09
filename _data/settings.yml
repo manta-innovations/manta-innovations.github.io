@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 
-title: Joel Lutman - Manta Innovations
+title: Manta Innovations Ltd
 logo: logo_small.png
 email: manta.innovations@gmail.com
 phone: +44 7969 316 432
@@ -10,7 +10,6 @@ address: London, SE8 3FW
 menu:
 - {name: About, link: '/about'}
 - {name: Blog, link: '/blog'}
-- {name: Portfolio, link: '/portfolio'}
 - {name: Contact, link: '/contact'}
 
 
@@ -28,20 +27,18 @@ google-analytics: UA-121436590-1
 #-------------------------------
 # Comment Section (Disqus)
 
-disqus-identifier: jhole89-github
+# disqus-identifier: jhole89-github
 
 
 #-------------------------------
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Joel Lutman <br> Software Engineer
+  hero-title: Manta Innovations Ltd <br> <sup><sub>Software Made Simple</sub></sup>
 
 social:
-- {icon: "ti-facebook", link: "https://www.facebook.com/JoelLutman"}
 - {icon: "ti-github", link: "https://github.com/jhole89"}
 - {icon: "ti-twitter", link: "https://twitter.com/jhole89"}
-- {icon: "ti-stack-overflow", link: "https://stackoverflow.com/users/5094147"}
 - {icon: "ti-linkedin ", link: "https://www.linkedin.com/in/joellutman"}
 
 

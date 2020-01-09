@@ -5,15 +5,12 @@ author: Joel Lutman
 image: assets/images/about/author.jpg
 ---
 
-A highly technical Software Engineer specializing in Big Data, Machine Learning, and Cloud Architecture. 
-I am driven by interesting challenges and constantly seek to further my own skills in areas of interest
-including Big Data, Machine Learning, Neural Networks, Distributed Computing, Computer Vision, AI,
-IoT, Serverless Infrastructure, and more. I am an advocate of clean code and functional design principles 
-and hold myself and those I work with to the highest of standards. 
+Hi I'm Joel, the owner of Manta Innovations Ltd.
 
-Having worked within both large and small organisations, I am now building out Manta Innovations Ltd 
-as a software consultancy and looking for friendly clients with interesting problems that we can 
-assist with solving.
+I'm a Software Engineer specializing in Big Data, Machine Learning, and Cloud Architecture. 
+Having worked within both large and small organisations, in 2018 I took the opportunity to start up Manta Innovations Ltd,
+and am now building it out as a software consultancy and looking for friendly clients with interesting problems that we 
+can assist with solving.
 
 While I strongly believe in choosing the correct languages and tools to solve the problem at hand, there are a
 number of languages I look to utilise, which based on my experience and expertise I have identified as best tools
