@@ -4,8 +4,8 @@
 title: Manta Innovations Ltd
 logo: logo_small.png
 email: sales@manta-innovations.co.uk
-phone: +44 7969 316 432
-address: London, SE8 3FW
+phone: "UK: +44 7969 316 432"
+address: "London, UK <br>Vancouver, Canada (Opening soon)"
 
 menu:
 - {name: About, link: '/about'}
