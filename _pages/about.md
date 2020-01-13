@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Me
+title: About
 author: Joel Lutman
 image: assets/images/about/author.jpg
 ---
@@ -12,9 +12,9 @@ Having worked within both large and small organisations, in 2018 I took the oppo
 and am now building it out as a software consultancy and looking for friendly clients with interesting problems that we 
 can assist with solving.
 
-While I strongly believe in choosing the correct languages and tools to solve the problem at hand, there are a
-number of languages I look to utilise, which based on my experience and expertise I have identified as best tools
-for the various services we offer.
+Here at Manta Innovations we strongly believe in choosing the correct languages and tools to solve the problem at hand. 
+There are a number of core languages that we look to utilise, which based on our experience and expertise, we have 
+identified as best tools for the various services we offer.
 
 * **Big Data** - our big data solutions are based on Apache Spark, a distributed programming framework written in Scala. Due
 to this we believe Scala, a highly functional and typesafe language, provides the best quality for writing Apache Spark
