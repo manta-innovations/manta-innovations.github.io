@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  AWS Glue SBT Quickstart
+title:  AWS Glue Quickstart
 date:   2020-02-01
-image:  
+image:  glue_logo.png
 author: jhole89
 tags:   serverless, apache spark, aws glue, sbt
 ---
@@ -95,8 +95,8 @@ the same build files. For that purpose we've created a [quickstart repo](https:/
 available free for use that contains everything to get started, including customisable style and format checking, 
 a basic logger, spark and glue contexts, and a base glue script to extend from. This means we can spend less time on 
 setting up boilerplate and jump straight into coding Glue scripts and running them in the cloud. Simply clone or fork
-the repo and follow the [README](https://www.github.com/jhole89/aws-glue-sbt-quickstart/README.md) to get started, or 
-alternatively check out the [build.sbt](https://www.github.com/jhole89/aws-glue-sbt-quickstart/build.sbt) to see how to
+the repo and follow the [README](https://github.com/jhole89/aws-glue-sbt-quickstart/blob/master/README.md) to get started, or 
+alternatively check out the [build.sbt](https://github.com/jhole89/aws-glue-sbt-quickstart/blob/master/build.sbt) to see how to
 adapt this pattern to an already existing repo.
 
 *Note:* While AWS Glue and Apache Spark support writing jobs in Scala and Python (via PySpark), we have only talked
