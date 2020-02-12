@@ -103,7 +103,7 @@ adapt this pattern to an already existing repo.
 about Glue and Spark in the context of Scala here. This is because Apache Spark is written in Scala and we encourage 
 anyone using Spark to interface with it using Scala. Ignoring the numerous typesafe benefits of a language like Scala, 
 if we are using a framework written in one language, we should use that language to integrate with it. Using PySpark is 
-the equivalent of trying to write a Sprint Boot application via a Python wrapper - there's a reason this doesn't exist, 
+the equivalent of trying to write a Spring Boot application via a Python wrapper - there's a reason this doesn't exist, 
 it's a bad idea. Despite this all the above still stands for PySpark, however instead of jars we have to provide our 
 shared library as a zipfile, and due to Pythons lack of a standard build tool we'd have to write our own script to do 
 this, but all the rest of the ideas and patterns still hold.
