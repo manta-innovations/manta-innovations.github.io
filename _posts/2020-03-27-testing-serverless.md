@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Testing Serverless (...with Serverless)
-date: 2020-02-01
-image:  
+title: Testing Serverless Workflows
+date: 2020-03-27
+image: Serverless-workflow-testable.png
 author: jhole89
 tags: serverless, testing, aws
 ---
@@ -23,8 +23,8 @@ and write data via an API, paying only for the storage and I/O throughput.
 
 ### Unit, Integration, Regression Testing
 In both traditional and serverless development, when building apps and workflows that involve calls to databases, api's, 
-and other services, we need to test the extremities. This is often done by utilising mocks to simulate responses from 
-outside our app or workflow. A large amount of mocks often highlights a large amount of side-effects, which while 
+and other services, we need to test the boundaries. This is often done by utilising mocks to simulate responses from 
+outside our app or workflow. A large amount of mocks often highlights a large amount of side-effects, which while
 something we can minimise by following functional programming paradigms, are often unavoidable. Mocks are most 
 frequently found in unit and integration tests, where we just want to test small functions or workflows, however they 
 can also be found in regression tests where we wish to control the outside world. Before continuing it's worthwhile to 
@@ -57,17 +57,41 @@ due to development. This can also be scaled into more advanced types of testing 
 While integration testing of an api crawler may test what happens to the crawler when the api goes offline by utilising 
 a local mock, regression testing should test what happens to all services should that api go offline, often on a 
 close to real life test environment. We would except regression tests to run automatically on a Continuous Integration 
-server for each PR rather each commit, and would be calling the services from outside, rather than utilising local mocks.
+server for each PR rather each commit, and would be calling the services from outside (where our CI server lives), 
+rather than utilising local mocks.
 
-### The problem with serverless
-Now that we have a firm grasp of the different types of testing, lets work through a real world example. Given some simple
-Python code that runs inside AWS Lambda as the initial stage of a CRON scheduled AWS Step Function to get data from an 
-api and record the results to AWS DynamoDB. We could expect the code for this lambda to have unit and integration tests 
-written alongside and included in the source repo, which utilise mocks and utilities such as wiremock to run small 
-configurable local only mock servers to test how this simple code would handle the various HTTP response codes and 
-capturing the messages being sent up to DynamoDB. 
+### The Problem with Managed Serverless
+Now that we have a firm grasp of the different types of testing, lets work through a real world example. Given this demo
+workflow:
 
-In a traditional stack, where instead of DynamoDB and Lambda we were managing a server running MongoDB and docker, we 
-could regression test these by running containers for MongoDB, Python, and wiremock on our CI box. By triggering the 
-Python code with a range of wiremock api paths, we can regression check the local MongoDB instance for side-effects 
-and excepted behaviour. However how do we do this with managed services?
+ 1. We have some simple code running inside an AWS Lambda to get data from an api, do some processing with it, and publish
+  the results to an S3 bucket
+ 2. The S3 bucket has an event trigger that sends an alert to an SNS topic when new data is published to it
+ 3. The SNS topic sends an email to our customers or users letting them know that the data is available to download, 
+ and provides them with a link (which is hidden behind AWS API Gateway for security reasons)
+ 
+![Our demo workflow]({{site.baseurl}}/assets/images/blog/Serverless-workflow.png){:class="img-fluid rounded float" :height="auto" width="75%"}
+
+We could expect the code for the Lambda to have unit and integration tests written alongside and included in the source 
+repo. These may utilise mocks and utilities such as wiremock to run small configurable local only mock servers to test 
+how this simple code would handle the various HTTP response codes and capturing the messages being sent to S3 - this is 
+testing the boundaries of the Lambda.
+
+In a traditional stack, where instead of Lambda, S3, SNS, and API-Gateway we were managing servers running docker, an 
+FTP server, an SMTP server, and NGINX; we could regression test these by running containers for the FTP, Lambda code, 
+SMTP server, NGINX, and wiremock on our CI box. By triggering the Lambda code with a range of wiremock api paths, we 
+can regression check the local FTP and SMTP instances for side-effects and unexpected behaviour. However how do we do 
+this with managed services? AWS SNS and a traditional SMTP server may be *similar*, but they're not the same. So there's
+really no point trying to mimic this workflow with replacement services, however if we only test the Lambda code then we
+are leaving much of our workflow untested. What happens if someone logs into the console and changes the SNS topic name?
+The Lambda will still pass it's unit and integration tests, and it will still publish data to the S3 bucket. However 
+the SNS topic will no longer receive the event, and won't be able to pass on alert to our users - our workflow is broken,
+and even worse we're not aware of it.
+
+This is the catch-22 of testing serverless, as our workflows become more complicated, we need rigorous testing, 
+but the more managed services we include, the less workflow is testable using unit and integration tests. This is why
+regression/systems testing becomes more important with serverless workflows, and why it should become more of the norm.
+
+![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
+
+### How to Test Serverless
