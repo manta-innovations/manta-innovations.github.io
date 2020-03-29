@@ -97,3 +97,21 @@ regression/systems testing becomes more important with serverless workflows, and
 ![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 ### How to Test Serverless
+So now that we understand what we want to test, and why its important, we need to find a way of testing it. The traditional
+approach still used by many would be to deploy the stack onto an environment, where someone can manually trigger and 
+evaluate the workflow. However this is testing only the happy path, as it doesnt evaluate all the permutations of different 
+components changing. Furthermore due to the manual process involved, we are unlikely to be able to evaluate this on each
+PR, and instead may only do this once per release; which could contain many changes, and should we find any regression, 
+it becomes harder to identify the root cause due to the multiple changes that have been implemented between releases.
+
+So how do we do better? How do we thoroughly test the workflow for each PR commit, and ensure that our workflow remains
+stable when individual components are able to change? Well, we can spin up infrastructure around our workflow, treat
+the workflow as a black box, then run a suite of tests to start the workflow, assert on the results at the end of the 
+workflow, and finally destroy our test infrastructure afterwards.
+
+For our demo workflow, we would achieve this by deploying an instance of AWS API Gateway, which the Lambda at the start 
+of our workflow will connect to, running our suite of tests to trigger the Lambda with a selection of endpoints passed 
+from the API Gateway (either from within our VPC or outside provided our CI server has the correct security credentials),
+and then assert the expected results exist in the S3 bucket via the workflow API Gateway (or the correct error is 
+raised).
+
