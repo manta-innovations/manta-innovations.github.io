@@ -8,7 +8,7 @@ tags: serverless, testing, aws
 ---
 
 ### What is Serverless?
-Serverless is a movement which aims to remove many issues typically found with running and maintaining your own servers 
+Serverless is a design pattern which aims to remove many issues typically found with running and maintaining your own servers 
 or services by instead utilising managed cloud services. This allows development teams to worry less about updating 
 services for security vulnerabilities, managing disaster recovery and redundancy, scaling services for unseen increases 
 in demand, or federating users across services; and instead allows them to focus on delivering value and benefit quickly 
@@ -59,6 +59,8 @@ a local mock, regression testing should test what happens to all services should
 close to real life test environment. We would except regression tests to run automatically on a Continuous Integration 
 server for each PR rather each commit, and would be calling the services from outside (where our CI server lives), 
 rather than utilising local mocks.
+
+![Testing Boundaries]({{site.baseurl}}/assets/images/blog/testing-boundaries.png){:class="img-fluid rounded float" :height="auto" width="60%"}
 
 ### The Problem with Managed Serverless
 Now that we have a firm grasp of the different types of testing, lets work through a real world example. Given this demo
