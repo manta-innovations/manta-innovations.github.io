@@ -69,8 +69,8 @@ workflow:
  1. We have some simple code running inside an AWS Lambda to get data from an api, do some processing with it, and publish
   the results to an S3 bucket
  2. The S3 bucket has an event trigger that sends an alert to an SNS topic when new data is published to it
- 3. The SNS topic sends an email to our customers or users letting them know that the data is available to download, 
- and provides them with a link (which is hidden behind AWS API Gateway for security reasons)
+ 3. The SNS topic sends an email to our users letting them know that the data is available to download from a link
+ 4. Users access the link, which is an AWS API Gateway endpoint to authorise access to the download
  
 ![Our demo workflow]({{site.baseurl}}/assets/images/blog/Serverless-workflow.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
