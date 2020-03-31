@@ -13,47 +13,40 @@ our own services which require large upfront purchasing and procurement costs, a
 (both monetary and developer time), in serverless we eschew this cost and only pay for what we use. However using a large
 amount of serverless resources also has it's drawbacks, in particular testing, which I aim to discuss here.
 
-### Unit, Integration, Regression Testing
+### The Different Types of Testing
 When building applications it's important that we write comprehensive test coverage to ensure our application behaves as
 expected, and protects us from unexpected changes during iteration. In both traditional and serverless development, 
-when building apps and workflows that involve calls to databases, api's, and other services, we need to test the 
-boundaries. This is often done by utilising mocks to simulate responses from outside our app or workflow. A large amount 
-of mocks often highlights a large amount of side-effects, which while something we can minimise by following functional 
-programming paradigms, are often unavoidable.
+when building apps and workflows that involve calls to other services, we need to test the boundaries. This is often 
+done by utilising mocks to simulate responses from outside our app or workflow. A large amount of mocks often highlights 
+a large amount of side-effects, which while something we can minimise by following functional programming paradigms, are 
+often unavoidable. Before continuing it's important to understand the difference between unit, integration, and 
+regression tests, as they are often easily mixed up:
 
-Mocks are most frequently found in unit and integration tests, where we just want to test small functions or workflows, 
-however they can also be found in regression tests where we wish to control the outside world. Before continuing it's 
-worthwhile to define the difference between these, as integration and regression tests are often poorly understood:
-
-* Unit test: the smallest type of test, where we test a function or class method. Every function should always have at 
-least one accompanying unit test to ensure a function acts as expected. When following Test Driven Development these 
-are the kind of tests we write first, asserting what we expect our soon to be written function will do. We expect 
-these tests to run automatically on a Continuous Integration server for each commit. Given
-```scala
-def addOne(input: Int): Int = input + 1
-```
-we would expect a corresponding test which may look something like
+* Unit test: the smallest type of test, where we test a function. When following Test Driven Development these are the 
+kind of tests we write first, asserting what we expect our soon to be written function will do. We expect these tests 
+to run automatically on a Continuous Integration server for each commit. Given a function
+`def addOne(input: Int): Int = input + 1` we would expect a corresponding test which may look something like
 ```scala
 addOne(-1) shouldEqual 0
 addOne(0) shouldEqual 1
 ```
-* Integration test: larger tests, where we test a workflow within our app which may call many functions. Integration 
-tests should be more behaviour focused and target how our system expects to run given different inputs.  We expect 
-these tests to run automatically on a Continuous Integration server for each commit. Given an application with a single 
-entrypoint signature of `def main(args: Seq[String]): Unit` we may expect an integration test to look something like 
-(note the use of a mocked url)
+
+* Integration test: larger tests, where we test a workflow which may call many functions. These are more behaviour 
+focused and target how our system expects to run given different inputs. As with unit tests, we expect these tests to 
+run automatically on a Continuous Integration server for each commit. Given an application with an 
+entrypoint `def main(args: Seq[String]): Unit` we may expect an integration test to look something like
+
 ```scala
 main(Seq("localhost:8000", "/fake-url", "30s")) shouldRaise 404
 main(Seq("localhost:8000", "/mocked-url", "30s")) shouldNotRaiseException
 ```
+
 * Regression test: the largest type of test, also thought of as a systems test. While unit and integration tests look to 
-test how our application behaves, regression tests look to test how our systems behave and prevent unexpected regressions 
-due to development. This can also be scaled into more advanced types of testing such as load testing or chaos engineering. 
-While integration testing of an api crawler may test what happens to the crawler when the api goes offline by utilising 
-a local mock, regression testing should test what happens to all services should that api go offline, often on a 
-close to real life test environment. We would except regression tests to run automatically on a Continuous Integration 
-server for each PR rather each commit, and would be calling the services from outside (where our CI server lives), 
-rather than utilising local mocks.
+test how our application behaves during changes to it, regression tests look to test how our systems behave due to our
+application changing, and prevent unexpected regressions due to development. While integration testing of an api crawler 
+may test what happens to the app when the api goes offline by utilising a local mock, regression testing should test what 
+happens to all services should that api go offline. We except these tests to run automatically on a Continuous Integration 
+server for each PR rather each commit.
 
 ![Testing Boundaries]({{site.baseurl}}/assets/images/blog/testing-boundaries.png){:class="img-fluid rounded float" :height="auto" width="60%"}
 
