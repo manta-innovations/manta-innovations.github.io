@@ -81,13 +81,12 @@ What happens if someone logs into the console and changes the SNS topic name? Th
 integration tests, and it will still publish data to the S3 bucket. However the SNS topic will no longer receive the 
 event, and won't be able to pass on alert to our users - our workflow is broken, and even worse we're not aware of it.
 
+![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
+
 This is the catch-22 of testing managed serverless - as our workflow's become more complicated, we need rigorous testing, 
 but the more managed services we include, the less testable our workflow becomes using only unit and integration tests. 
 This is why regression/systems testing becomes more important with serverless workflow's, and why it should become more 
 of the norm.
-
-![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
-
 
 ### Regression Testing Serverless Workflow's
 So now that we understand what we want to test, and why its important, we need to find a way of testing it. The traditional
@@ -97,26 +96,25 @@ components changing. Additionally, due to the manual process involved we are unl
 PR, and instead may only do this once per release which could contain many changes. Should we find any regressions, 
 it becomes harder to identify the root cause due to the multiple changes that have been implemented between releases.
 
-So how do we do better? How do we thoroughly test the workflow for each PR commit, and ensure that our workflow remains
-stable when individual components are able to change? Well, what we can do is take the same approach used for unit and 
+So how do we do better? How do we thoroughly test the workflow and ensure that our workflow remains stable when 
+individual components are able to change? Well, what we can do is take the same approach used for unit and 
 integration tests, and look at how we can test our remit (in this case our entire workflow) as a black box. We can 
 achieve this by spinning up infrastructure around our workflow, then run a suite of tests to start the workflow, assert 
 on the results at the end of the workflow, and finally destroy our test infrastructure afterwards - to do which we need
 to leverage IaC (Infrastructure as Code) tools such as [terraform](https://www.terraform.io/).
 
-For our demo workflow, we would achieve this by deploying an instance of AWS API Gateway and an S3 Bucket (to provide test
-data from), which the Lambda at the start of our workflow will connect to. We can then run our suite of tests to trigger 
-the Lambda with a selection of endpoints passed from the API Gateway, and then assert the expected results exist in the 
-workflow S3 bucket via the workflow API Gateway (or the correct error is raised).
+For our demo workflow, we would achieve this by deploying managed services, which the Lambda at the start of our 
+workflow will connect to, in lieu of the real external API. We can then run a suite of tests to trigger the Lambda, and 
+assert the expected results exist at the end of our workflow via the via the workflow API Gateway.
 
 ![Regression workflow]({{site.baseurl}}/assets/images/blog/serverless-workflow-ci.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 Conceptually, this is very similar to running a local wiremock server as part of our test suites - well, why can't we 
-just do that instead of worrying about building infrastructure? The problem here is that running Wiremock within our test
-suite would only be local to that test environment, and we wouldn't be able to expose the localhost Wiremock endpoint to
-the Lambda - we would need a DNS for that. By launching API Gateway, we generate a public (or private) URL which we can
-pass to our applications and test them from the outside in; compared to unit or integration tests, where we run tests
-alongside our code.
+just do that instead of worrying about building infrastructure? The problem here is that running wiremock within our test
+suite would only be local to that process, and we wouldn't be able to expose the wiremock endpoint to the Lambda - we 
+would need a DNS for that. By launching API Gateway, we generate a public (or private) URL which we can pass to our 
+applications and test them from the outside in; compared to unit or integration tests, where we run tests alongside our 
+code.
 
 With this approach, we can now automate the traditional manual QA testing, and ensure we cover a much wider spectrum of
 BDD test cases, including scenarios such as *"What alert do/should our users receive if the API is unavailable?"*. In 
