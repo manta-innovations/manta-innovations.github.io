@@ -90,28 +90,62 @@ The Lambda will still pass it's unit and integration tests, and it will still pu
 the SNS topic will no longer receive the event, and won't be able to pass on alert to our users - our workflow is broken,
 and even worse we're not aware of it.
 
-This is the catch-22 of testing serverless, as our workflows become more complicated, we need rigorous testing, 
-but the more managed services we include, the less workflow is testable using unit and integration tests. This is why
-regression/systems testing becomes more important with serverless workflows, and why it should become more of the norm.
+This is the catch-22 of testing serverless - as our workflows become more complicated, we need rigorous testing, 
+but the more managed services we include, the less testable our workflow becomes using only unit and integration tests. 
+This is why regression/systems testing becomes more important with serverless workflows, and why it should become more 
+of the norm.
 
 ![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
-### How to Test Serverless
+### Testing Serverless Workflows
 So now that we understand what we want to test, and why its important, we need to find a way of testing it. The traditional
 approach still used by many would be to deploy the stack onto an environment, where someone can manually trigger and 
-evaluate the workflow. However this is testing only the happy path, as it doesnt evaluate all the permutations of different 
-components changing. Furthermore due to the manual process involved, we are unlikely to be able to evaluate this on each
-PR, and instead may only do this once per release; which could contain many changes, and should we find any regression, 
+evaluate the workflow. This is testing the happy path, as it doesnt evaluate all the permutations of different 
+components changing. Additionally, due to the manual process involved we are unlikely to be able to evaluate this on each
+PR, and instead may only do this once per release which could contain many changes. Should we find any regressions, 
 it becomes harder to identify the root cause due to the multiple changes that have been implemented between releases.
 
 So how do we do better? How do we thoroughly test the workflow for each PR commit, and ensure that our workflow remains
-stable when individual components are able to change? Well, we can spin up infrastructure around our workflow, treat
-the workflow as a black box, then run a suite of tests to start the workflow, assert on the results at the end of the 
-workflow, and finally destroy our test infrastructure afterwards.
+stable when individual components are able to change? Well, what we can do is take the same approach used for unit and 
+integration tests, and look at how we can test our remit (in this case our entire workflow) as a black box. We can 
+achieve this by spinning up infrastructure around our workflow, then run a suite of tests to start the workflow, assert 
+on the results at the end of the workflow, and finally destroy our test infrastructure afterwards - to do which we need
+to leverage IaC (Infrastructure as Code) tools such as [terraform](https://www.terraform.io/).
 
-For our demo workflow, we would achieve this by deploying an instance of AWS API Gateway, which the Lambda at the start 
-of our workflow will connect to, running our suite of tests to trigger the Lambda with a selection of endpoints passed 
-from the API Gateway (either from within our VPC or outside provided our CI server has the correct security credentials),
-and then assert the expected results exist in the S3 bucket via the workflow API Gateway (or the correct error is 
-raised).
+For our demo workflow, we would achieve this by deploying an instance of AWS API Gateway and an S3 Bucket (to provide test
+data from), which the Lambda at the start of our workflow will connect to. We can then run our suite of tests to trigger 
+the Lambda with a selection of endpoints passed from the API Gateway, and then assert the expected results exist in the 
+workflow S3 bucket via the workflow API Gateway (or the correct error is raised).
 
+![Regression workflow]({{site.baseurl}}/assets/images/blog/serverless-workflow-ci.png){:class="img-fluid rounded float" :height="auto" width="75%"}
+
+Conceptually, this is very similar to running a local Wiremock server as part of our test suites - well, why can't we 
+just do that instead of worrying about building infrastructure? The problem here is that running Wiremock within our test
+suite would only be local to that test environment, and we wouldn't be able to expose the localhost Wiremock endpoint to
+the Lambda - we would need a DNS for that. By launching API Gateway, we generate a public (or private) URL which we can
+pass to our applications and test them from the outside in; compared to unit or integration tests, where we run tests
+alongside our code.
+
+With this approach, we can now automate the traditional manual QA testing, and ensure we cover a much wider spectrum of
+BDD test cases, including scenarios such as *"What alert do/should our users receive if the API is unavailable?"*. In 
+traditional unit/integration testing we wouldn't be able to answer or test for this, as this process is handled outside 
+of the Lambda - we could test what happens to the Lambda in the event of the external API becoming available, but not 
+how downstream processes would react - we'd be reliant on someone manually trying to mimic this scenario, which simply 
+doesn't scale. Furthermore, utilising IaC we can run a huge barrage of these larger workflow tests in parallel (paying 
+only for what resources we actually use), and easily scale these up to incorporate elements of load and chaos testing; 
+instead of being reactive to our workflow breaking, we can push the limits to establish our redundancy prior to experience 
+event outages. 
+
+### Conclusions
+Hopefully I've sold you on the idea of regression/systems testing, and why as we more to a more serverless world, we need
+to establish a more holistic view on testing our systems as a whole, rather than only the components in isolation. That's
+not to say that we should abandon the faithful unit test in favour of systems testing, but why we should not fall into
+the fallacy that just because our "code" is tested, our systems and workflow's are also tested. This also highlights why 
+Development, QA, and DevOps are not activities do be done in isolation by separate teams. Having a key understanding
+of each is required to implement and test such a workflow, and that ideally both the workflow and test framework should 
+be implemented by a single cross functional team, rather than throwing tasks over the fence.
+
+If any of that sounds interesting and you'd like to know more, you can reach me at 
+[joel@manta-innovations.co.uk](mailto:joel@manta-innovations.co.uk). There is a corresponding live demo that implements
+this workflow and the ideals behind it, which can be shown on request; and feel free to reach out for assistance or training
+with Cloud, Data, or DevOps solutions, or any of our other workstreams here at [Manta Innovations Ltd](https://manta-innovations.co.uk/).
