@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing Serverless Workflows
+title: Testing Serverless Workflow's
 date: 2020-03-27
 image: Serverless-workflow-testable.png
 author: jhole89
@@ -13,12 +13,12 @@ our own services which require large upfront purchasing and procurement costs, a
 (both monetary and developer time), in serverless we eschew this cost and only pay for what we use.
 
 However using a large amount of serverless resources also has it's drawbacks, in particular the difficulties in testing.
-In this article I aim to discuss some of these problems, and propose a solution for testing heavily serverless workflows.
+In this article I aim to discuss some of these problems, and propose a solution for testing heavily serverless workflow's.
 
 ### The Different Types of Testing
 When building applications it's important that we write comprehensive test coverage to ensure our application behaves as
 expected, and protects us from unexpected changes during iteration. In both traditional and serverless development, 
-when building apps and workflows that involve calls to other services, we need to test the boundaries. This is often 
+when building apps and workflow's that involve calls to other services, we need to test the boundaries. This is often 
 done by utilising mocks to simulate responses from outside our app or workflow. A large amount of mocks often highlights 
 a large amount of side-effects, which while something we can minimise by following functional programming paradigms, are 
 often unavoidable. Before continuing it's important to understand the difference between unit, integration, and 
@@ -79,14 +79,14 @@ The Lambda will still pass it's unit and integration tests, and it will still pu
 the SNS topic will no longer receive the event, and won't be able to pass on alert to our users - our workflow is broken,
 and even worse we're not aware of it.
 
-This is the catch-22 of testing serverless - as our workflows become more complicated, we need rigorous testing, 
+This is the catch-22 of testing serverless - as our workflow's become more complicated, we need rigorous testing, 
 but the more managed services we include, the less testable our workflow becomes using only unit and integration tests. 
-This is why regression/systems testing becomes more important with serverless workflows, and why it should become more 
+This is why regression/systems testing becomes more important with serverless workflow's, and why it should become more 
 of the norm.
 
 ![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
-### Testing Serverless Workflows
+### Testing Serverless Workflow's
 So now that we understand what we want to test, and why its important, we need to find a way of testing it. The traditional
 approach still used by many would be to deploy the stack onto an environment, where someone can manually trigger and 
 evaluate the workflow. This is testing the happy path, as it doesnt evaluate all the permutations of different 
