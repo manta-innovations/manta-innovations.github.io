@@ -10,8 +10,10 @@ tags: serverless, testing, aws
 Serverless is a design pattern which aims to remove many issues development teams typically face when maintaining 
 servers or services, enabling them to focus on delivering value and benefit quickly and efficiently. Instead of running
 our own services which require large upfront purchasing and procurement costs, along with the ongoing maintenance cost 
-(both monetary and developer time), in serverless we eschew this cost and only pay for what we use. However using a large
-amount of serverless resources also has it's drawbacks, in particular testing, which I aim to discuss here.
+(both monetary and developer time), in serverless we eschew this cost and only pay for what we use.
+
+However using a large amount of serverless resources also has it's drawbacks, in particular the difficulties in testing.
+In this article I aim to discuss some of these problems, and propose a solution for testing heavily serverless workflows.
 
 ### The Different Types of Testing
 When building applications it's important that we write comprehensive test coverage to ensure our application behaves as
@@ -35,7 +37,6 @@ addOne(0) shouldEqual 1
 focused and target how our system expects to run given different inputs. As with unit tests, we expect these tests to 
 run automatically on a Continuous Integration server for each commit. Given an application with an 
 entrypoint `def main(args: Seq[String]): Unit` we may expect an integration test to look something like
-
 ```scala
 main(Seq("localhost:8000", "/fake-url", "30s")) shouldRaise 404
 main(Seq("localhost:8000", "/mocked-url", "30s")) shouldNotRaiseException
