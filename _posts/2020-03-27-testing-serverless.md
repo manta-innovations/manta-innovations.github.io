@@ -9,7 +9,7 @@ tags: serverless, testing, aws
 
 Serverless is a design pattern which aims to remove many issues development teams typically face when maintaining 
 servers or services, enabling them to focus on delivering value and benefit quickly and efficiently. Instead of running
-our own services which require large upfront purchasing and procurement costs, along with the ongoing maintenance cost 
+servers which require large upfront purchasing and procurement costs, along with the ongoing maintenance cost 
 (both monetary and developer time), in serverless we eschew this cost and only pay for what we use.
 
 However using a large amount of serverless resources also has it's drawbacks, in particular the difficulties in testing.
@@ -65,11 +65,11 @@ workflow:
 ![Our demo workflow]({{site.baseurl}}/assets/images/blog/Serverless-workflow.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 We could expect the code for the Lambda to have unit and integration tests written alongside. These may utilise mocks 
-and utilities such as wiremock to run local mock servers to test how this simple code would handle the various HTTP 
-response codes and capturing the messages being sent to S3 - this is testing the boundaries of the Lambda. However this
-leaves much of our workflow untested.
+and utilities such as wiremock to test how this simple code would handle the various HTTP response codes, and capture 
+the messages being sent to S3. This is testing the boundaries of the Lambda, however this leaves much of our workflow 
+untested.
 
-In a traditional stack, where instead of utilising serverless services we were managing servers (e.g. an FTP server for 
+In a traditional stack, where instead of utilising serverless we would be managing servers (e.g. an FTP server for 
 S3, an SMTP server for SNS, NGINX for API-Gateway); we could regression test these by running containers for them 
 alongside wiremock on our CI box. By triggering the application code with a range of api paths, we can regression test 
 the local container instances for side-effects and unexpected behaviour. However how do we do this with managed 
@@ -84,9 +84,8 @@ event, and won't be able to pass on alert to our users - our workflow is broken,
 ![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 This is the catch-22 of testing managed serverless - as our workflow's become more complicated, we need rigorous testing, 
-but the more managed services we include, the less tested our workflow becomes using only unit and integration tests. 
-This is why regression/systems testing becomes more important with serverless workflow's, and why it should become more 
-of the norm.
+but the more managed services we include, the less tested our workflow becomes. This is why regression/systems testing 
+becomes more important with serverless workflow's, and why it should become more of the norm.
 
 ### Regression Testing Serverless Workflow's
 So now that we understand what we want to test, and why its important, we need to find a way of testing it; and to 
@@ -123,11 +122,11 @@ code.
 With this approach, we can now automate the traditional manual QA testing, and ensure we cover a much wider spectrum of
 BDD test cases, including scenarios such as *"What alert do/should our users receive if the API is unavailable?"*. In 
 traditional unit/integration testing we wouldn't be able to answer or test for this, as this process is handled outside 
-of the Lambda - we could test what happens to the Lambda in the event of the external API becoming available, but not 
-how downstream processes would react - we'd be reliant on someone manually trying to mimic this scenario, which simply 
-doesn't scale. Furthermore, utilising IaC we can run a huge barrage of these larger workflow tests in parallel, and 
-easily scale these up to incorporate elements of load and chaos testing; instead of being reactive to our workflow 
-breaking, we can push the limits to establish our redundancy prior to experience event outages. 
+of the Lambda. We could test what happens to the Lambda in the event of the external API becoming available, but not 
+how downstream processes would react - we'd be reliant on someone manually trying to mimic this scenario, which doesn't 
+scale. Furthermore, utilising IaC we can run a huge barrage of these larger workflow tests in parallel, and 
+easily scale these up to incorporate elements of load and chaos testing. Instead of being reactive to our workflow 
+breaking, we can push the limits to establish our redundancy prior to experiencing event outages. 
 
 ### Conclusions
 Hopefully I've sold you on the idea of regression/systems testing, and why as we move to a more serverless world, we need
@@ -140,5 +139,5 @@ be implemented by a single cross functional team, rather than throwing tasks ove
 
 If any of that sounds interesting and you'd like to know more, you can reach me at 
 [joel@manta-innovations.co.uk](mailto:joel@manta-innovations.co.uk). There is a corresponding live demo that implements
-this workflow and the ideals behind it, which can be shown on request; and feel free to reach out for assistance or training
+this workflow and the ideals behind it, which can be shown on request. Feel free to reach out for assistance or training
 with Cloud, Data, or DevOps solutions, or any of our other workstreams here at [Manta Innovations Ltd](https://manta-innovations.co.uk/).
