@@ -69,18 +69,19 @@ and utilities such as wiremock to run local mock servers to test how this simple
 response codes and capturing the messages being sent to S3 - this is testing the boundaries of the Lambda. However this
 leaves much of our workflow untested.
 
-In a traditional stack, where instead of Lambda, S3, SNS, and API-Gateway we were managing servers running docker, an 
-FTP server, an SMTP server, and NGINX; we could regression test these by running containers for the FTP, Lambda code, 
-SMTP server, NGINX, and wiremock on our CI box. By triggering the Lambda code with a range of wiremock api paths, we 
-can regression check the local FTP and SMTP instances for side-effects and unexpected behaviour. However how do we do 
-this with managed services? AWS SNS and a traditional SMTP server may be *similar*, but they're not the same. So there's
-really no point trying to mimic this workflow with replacement services, however if we only test the Lambda code then we
-are leaving much of our workflow untested. What happens if someone logs into the console and changes the SNS topic name?
-The Lambda will still pass it's unit and integration tests, and it will still publish data to the S3 bucket. However 
-the SNS topic will no longer receive the event, and won't be able to pass on alert to our users - our workflow is broken,
-and even worse we're not aware of it.
+In a traditional stack, where instead of utilising serverless services we were managing servers (e.g. an FTP server for 
+S3, an SMTP server for SNS, NGINX for API-Gateway); we could regression test these by running containers for them 
+alongside wiremock on our CI box. By triggering the application code with a range of api paths, we can regression test 
+the local container instances for side-effects and unexpected behaviour. However how do we do this with managed 
+services which are not available in the form of local containers?
 
-This is the catch-22 of testing serverless - as our workflow's become more complicated, we need rigorous testing, 
+AWS SNS and a traditional SMTP server may be *similar*, but they're not the same, and any tests using it as a replacement
+would provide little benefit. However if we only test the Lambda code then we are leaving much of our workflow untested. 
+What happens if someone logs into the console and changes the SNS topic name? The Lambda will still pass it's unit and 
+integration tests, and it will still publish data to the S3 bucket. However the SNS topic will no longer receive the 
+event, and won't be able to pass on alert to our users - our workflow is broken, and even worse we're not aware of it.
+
+This is the catch-22 of testing managed serverless - as our workflow's become more complicated, we need rigorous testing, 
 but the more managed services we include, the less testable our workflow becomes using only unit and integration tests. 
 This is why regression/systems testing becomes more important with serverless workflow's, and why it should become more 
 of the norm.
@@ -110,7 +111,7 @@ workflow S3 bucket via the workflow API Gateway (or the correct error is raised)
 
 ![Regression workflow]({{site.baseurl}}/assets/images/blog/serverless-workflow-ci.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
-Conceptually, this is very similar to running a local Wiremock server as part of our test suites - well, why can't we 
+Conceptually, this is very similar to running a local wiremock server as part of our test suites - well, why can't we 
 just do that instead of worrying about building infrastructure? The problem here is that running Wiremock within our test
 suite would only be local to that test environment, and we wouldn't be able to expose the localhost Wiremock endpoint to
 the Lambda - we would need a DNS for that. By launching API Gateway, we generate a public (or private) URL which we can
