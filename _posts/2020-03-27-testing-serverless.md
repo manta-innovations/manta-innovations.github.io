@@ -51,7 +51,7 @@ server for each PR rather each commit.
 
 ![Testing Boundaries]({{site.baseurl}}/assets/images/blog/testing-boundaries.png){:class="img-fluid rounded float" :height="auto" width="60%"}
 
-### The Problem with Testing Serverless Workflow's
+### Problems with Testing Serverless Workflow's
 Now that we have a firm grasp of the different types of testing, lets work through a real world example where we will see
 that relying only on unit and integration tests is not enough for even simple serverless workflow's. Given this demo
 workflow:
@@ -87,7 +87,8 @@ of the norm.
 
 ![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
-### Testing Serverless Workflow's
+
+### Regression Testing Serverless Workflow's
 So now that we understand what we want to test, and why its important, we need to find a way of testing it. The traditional
 approach still used by many would be to deploy the stack onto an environment, where someone can manually trigger and 
 evaluate the workflow. This is testing the happy path, as it doesnt evaluate all the permutations of different 
