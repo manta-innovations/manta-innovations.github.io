@@ -51,8 +51,9 @@ server for each PR rather each commit.
 
 ![Testing Boundaries]({{site.baseurl}}/assets/images/blog/testing-boundaries.png){:class="img-fluid rounded float" :height="auto" width="60%"}
 
-### The Problem with Managed Serverless
-Now that we have a firm grasp of the different types of testing, lets work through a real world example. Given this demo
+### The Problem with Testing Serverless Workflow's
+Now that we have a firm grasp of the different types of testing, lets work through a real world example where we will see
+that relying only on unit and integration tests is not enough for even simple serverless workflow's. Given this demo
 workflow:
 
  1. We have some simple code running inside an AWS Lambda to get data from an api, do some processing with it, and publish
@@ -63,10 +64,10 @@ workflow:
  
 ![Our demo workflow]({{site.baseurl}}/assets/images/blog/Serverless-workflow.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
-We could expect the code for the Lambda to have unit and integration tests written alongside and included in the source 
-repo. These may utilise mocks and utilities such as wiremock to run small configurable local only mock servers to test 
-how this simple code would handle the various HTTP response codes and capturing the messages being sent to S3 - this is 
-testing the boundaries of the Lambda.
+We could expect the code for the Lambda to have unit and integration tests written alongside. These may utilise mocks 
+and utilities such as wiremock to run local mock servers to test how this simple code would handle the various HTTP 
+response codes and capturing the messages being sent to S3 - this is testing the boundaries of the Lambda. However this
+leaves much of our workflow untested.
 
 In a traditional stack, where instead of Lambda, S3, SNS, and API-Gateway we were managing servers running docker, an 
 FTP server, an SMTP server, and NGINX; we could regression test these by running containers for the FTP, Lambda code, 
@@ -126,7 +127,7 @@ instead of being reactive to our workflow breaking, we can push the limits to es
 event outages. 
 
 ### Conclusions
-Hopefully I've sold you on the idea of regression/systems testing, and why as we more to a more serverless world, we need
+Hopefully I've sold you on the idea of regression/systems testing, and why as we move to a more serverless world, we need
 to establish a more holistic view on testing our systems as a whole, rather than only the components in isolation. That's
 not to say that we should abandon the faithful unit test in favour of systems testing, but why we should not fall into
 the fallacy that just because our "code" is tested, our systems and workflow's are also tested. This also highlights why 
