@@ -7,28 +7,23 @@ author: jhole89
 tags: serverless, testing, aws
 ---
 
-### What is Serverless?
-Serverless is a design pattern which aims to remove many issues typically found with running and maintaining your own servers 
-or services by instead utilising managed cloud services. This allows development teams to worry less about updating 
-services for security vulnerabilities, managing disaster recovery and redundancy, scaling services for unseen increases 
-in demand, or federating users across services; and instead allows them to focus on delivering value and benefit quickly 
-and efficiently.
-
-Instead of running our own services which require large upfront purchasing and procurement costs, along with the 
-ongoing maintenance cost (both monetary and developer time), in serverless we eschew this cost and only pay for what 
-we use. Examples of how Serverless 1.0 has materialised is with managed compute services such as AWS Lambda and AWS 
-Glue, services where you simply submit small scripts and define an execution runtime, paying only for the execution 
-time and memory requirement; and managed storage services such as AWS DynamoDB and AWS S3, services where you read 
-and write data via an API, paying only for the storage and I/O throughput.
+Serverless is a design pattern which aims to remove many issues development teams typically face when maintaining 
+servers or services, enabling them to focus on delivering value and benefit quickly and efficiently. Instead of running
+our own services which require large upfront purchasing and procurement costs, along with the ongoing maintenance cost 
+(both monetary and developer time), in serverless we eschew this cost and only pay for what we use. However using a large
+amount of serverless resources also has it's drawbacks, in particular testing, which I aim to discuss here.
 
 ### Unit, Integration, Regression Testing
-In both traditional and serverless development, when building apps and workflows that involve calls to databases, api's, 
-and other services, we need to test the boundaries. This is often done by utilising mocks to simulate responses from 
-outside our app or workflow. A large amount of mocks often highlights a large amount of side-effects, which while
-something we can minimise by following functional programming paradigms, are often unavoidable. Mocks are most 
-frequently found in unit and integration tests, where we just want to test small functions or workflows, however they 
-can also be found in regression tests where we wish to control the outside world. Before continuing it's worthwhile to 
-define the difference between these, as integration and regression tests are often poorly understood:
+When building applications it's important that we write comprehensive test coverage to ensure our application behaves as
+expected, and protects us from unexpected changes during iteration. In both traditional and serverless development, 
+when building apps and workflows that involve calls to databases, api's, and other services, we need to test the 
+boundaries. This is often done by utilising mocks to simulate responses from outside our app or workflow. A large amount 
+of mocks often highlights a large amount of side-effects, which while something we can minimise by following functional 
+programming paradigms, are often unavoidable.
+
+Mocks are most frequently found in unit and integration tests, where we just want to test small functions or workflows, 
+however they can also be found in regression tests where we wish to control the outside world. Before continuing it's 
+worthwhile to define the difference between these, as integration and regression tests are often poorly understood:
 
 * Unit test: the smallest type of test, where we test a function or class method. Every function should always have at 
 least one accompanying unit test to ensure a function acts as expected. When following Test Driven Development these 
