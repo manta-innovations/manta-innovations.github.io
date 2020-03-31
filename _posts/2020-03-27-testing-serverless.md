@@ -84,17 +84,21 @@ event, and won't be able to pass on alert to our users - our workflow is broken,
 ![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 This is the catch-22 of testing managed serverless - as our workflow's become more complicated, we need rigorous testing, 
-but the more managed services we include, the less testable our workflow becomes using only unit and integration tests. 
+but the more managed services we include, the less tested our workflow becomes using only unit and integration tests. 
 This is why regression/systems testing becomes more important with serverless workflow's, and why it should become more 
 of the norm.
 
 ### Regression Testing Serverless Workflow's
-So now that we understand what we want to test, and why its important, we need to find a way of testing it. The traditional
-approach still used by many would be to deploy the stack onto an environment, where someone can manually trigger and 
-evaluate the workflow. This is testing the happy path, as it doesnt evaluate all the permutations of different 
+So now that we understand what we want to test, and why its important, we need to find a way of testing it; and to 
+achieve this we need to be using regression tests.
+
+The traditional approach still used by many would be to deploy the stack onto an environment, where someone can manually 
+trigger and evaluate the workflow. This is testing the happy path, as it doesnt evaluate all the permutations of different 
 components changing. Additionally, due to the manual process involved we are unlikely to be able to evaluate this on each
 PR, and instead may only do this once per release which could contain many changes. Should we find any regressions, 
-it becomes harder to identify the root cause due to the multiple changes that have been implemented between releases.
+it becomes harder to identify the root cause due to the multiple changes that have been implemented between releases. 
+This also doesn't scale well when we have more complex workflow's that utilise parallel and diverging streams (for an 
+example of such read my blog on [building serverless data pipelines]({{site.baseurl}}/2019/12/22/serverless-big-data-pipelines/)).
 
 So how do we do better? How do we thoroughly test the workflow and ensure that our workflow remains stable when 
 individual components are able to change? Well, what we can do is take the same approach used for unit and 
@@ -121,10 +125,9 @@ BDD test cases, including scenarios such as *"What alert do/should our users rec
 traditional unit/integration testing we wouldn't be able to answer or test for this, as this process is handled outside 
 of the Lambda - we could test what happens to the Lambda in the event of the external API becoming available, but not 
 how downstream processes would react - we'd be reliant on someone manually trying to mimic this scenario, which simply 
-doesn't scale. Furthermore, utilising IaC we can run a huge barrage of these larger workflow tests in parallel (paying 
-only for what resources we actually use), and easily scale these up to incorporate elements of load and chaos testing; 
-instead of being reactive to our workflow breaking, we can push the limits to establish our redundancy prior to experience 
-event outages. 
+doesn't scale. Furthermore, utilising IaC we can run a huge barrage of these larger workflow tests in parallel, and 
+easily scale these up to incorporate elements of load and chaos testing; instead of being reactive to our workflow 
+breaking, we can push the limits to establish our redundancy prior to experience event outages. 
 
 ### Conclusions
 Hopefully I've sold you on the idea of regression/systems testing, and why as we move to a more serverless world, we need
