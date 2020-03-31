@@ -4,13 +4,14 @@ title: Testing Serverless Workflow's
 date: 2020-03-27
 image: Serverless-workflow-testable.png
 author: jhole89
-tags: serverless, testing, aws
+tags: serverless, testing, aws, cloud-native
 ---
 
 Serverless is a design pattern which aims to remove many issues development teams typically face when maintaining 
-servers or services, enabling them to focus on delivering value and benefit quickly and efficiently. Instead of running
-servers which require large upfront purchasing and procurement costs, along with the ongoing maintenance cost 
-(both monetary and developer time), in serverless we eschew this cost and only pay for what we use.
+servers or services, enabling them to focus on delivering value and benefit quickly and efficiently. Instead of spending 
+time and money configuring and managing servers, we can turn to a serverless paradigm and offload 
+this burden onto Cloud Native parties who specialise in these tasks. This frees up time and resources to focus on solving 
+problems in our core domain.
 
 However using a large amount of serverless resources also has it's drawbacks, in particular the difficulties in testing.
 In this article I aim to discuss some of these problems, and propose a solution for testing heavily serverless workflow's.
@@ -72,7 +73,7 @@ untested.
 In a traditional stack, where instead of utilising serverless we would be managing servers (e.g. an FTP server for 
 S3, an SMTP server for SNS, NGINX for API-Gateway); we could regression test these by running containers for them 
 alongside wiremock on our CI box. By triggering the application code with a range of api paths, we can regression test 
-the local container instances for side-effects and unexpected behaviour. However how do we do this with managed 
+the local container instances for side-effects and unexpected behaviour. However how do we do this with managed/cloud-native 
 services which are not available in the form of local containers?
 
 AWS SNS and a traditional SMTP server may be *similar*, but they're not the same, and any tests using it as a replacement
@@ -83,8 +84,8 @@ event, and won't be able to pass on alert to our users - our workflow is broken,
 
 ![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
-This is the catch-22 of testing managed serverless - as our workflow's become more complicated, we need rigorous testing, 
-but the more managed services we include, the less tested our workflow becomes. This is why regression/systems testing 
+This is the catch-22 of testing managed/cloud-native serverless - as our workflow's become more complicated, we need rigorous testing, 
+but the more services we include, the less tested our workflow becomes. This is why regression/systems testing 
 becomes more important with serverless workflow's, and why it should become more of the norm.
 
 ### Regression Testing Serverless Workflow's
@@ -106,7 +107,7 @@ achieve this by spinning up infrastructure around our workflow, then run a suite
 on the results at the end of the workflow, and finally destroy our test infrastructure afterwards - to do which we need
 to leverage IaC (Infrastructure as Code) tools such as [terraform](https://www.terraform.io/).
 
-For our demo workflow, we would achieve this by deploying managed services, which the Lambda at the start of our 
+For our demo workflow, we would achieve this by deploying managed/cloud-native services, which the Lambda at the start of our 
 workflow will connect to, in lieu of the real external API. We can then run a suite of tests to trigger the Lambda, and 
 assert the expected results exist at the end of our workflow via the via the workflow API Gateway.
 
