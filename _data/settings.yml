@@ -235,9 +235,36 @@ portfolio-items:
     portfolio-type:
       - type: "architecture"
 
+#-------------------------------
+# Client Slider Section
+
+client-slider-items:
+  - logo: "assets/images/clients-logo/relx-logo.png"
+    url: "#"
+
+  - logo: "assets/images/clients-logo/client-logo-hsbc_40x120.png"
+    url: "#"
+
+  - logo: "assets/images/clients-logo/client-logo-quantexa.png"
+    url: "#"
+
+  - logo: "assets/images/clients-logo/blackcat-logo.png"
+    url: "#"
+
+  - logo: "assets/images/clients-logo/relx-logo.png"
+    url: "#"
+
+  - logo: "assets/images/clients-logo/client-logo-hsbc_40x120.png"
+    url: "#"
+
+  - logo: "assets/images/clients-logo/client-logo-quantexa.png"
+    url: "#"
+
+  - logo: "assets/images/clients-logo/blackcat-logo.png"
+    url: "#"
 
 #-------------------------------
 # Contact Section
 
 contact-title: Contact Info
-contact-email: sales@manta-innovations.co.uk
+contact-email: info@manta-innovations.co.uk
