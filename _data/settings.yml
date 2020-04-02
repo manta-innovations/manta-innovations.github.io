@@ -3,7 +3,7 @@
 
 title: Manta Innovations Ltd
 logo: logo_small.png
-email: sales@manta-innovations.co.uk
+email: info@manta-innovations.co.uk
 phone: "UK: +44 7969 316 432 <br>CA: +1 (236) 512-1715"
 address: "London, UK <br>Vancouver, Canada"
 
@@ -236,32 +236,98 @@ portfolio-items:
       - type: "architecture"
 
 #-------------------------------
+# Testimonials Section
+
+testimonial-items:
+  - name: "Stephan Heitmeyer"
+    image: "assets/images/testimonial/client-stephan.jpeg"
+    designation : "Senior Solutions Architect, Reed Business Information"
+    content : "Joel's experience in designing, programming and delivering ETL processes has been highly respected, and
+    our in-house teams learned greatly from his approach. Terraform build pipelines, gitlab and other open source
+    software, as well as a DevOps mindset seem to come naturally to Joel. I commend him for his passion and energy, and
+    his implementation ideas, which he has always been happy to discuss, in a spirit of mutual mentoring and ongoing
+    learning. Joel has been great to work with and I'd happily work with him again in the future."
+
+  - name: "Freya Juniper-Nine"
+    image: "assets/images/testimonial/client-freya.jpeg"
+    designation: "Solutions Architect, BlackCat Solutions Ltd"
+    content: "Joel was a great asset to the team bringing a wealth of knowledge on enterprise data, serverless and cloud
+    architectures. Joel could be relied on to provide great advice to the client and the rest of the team. Joel shared
+    their knowledge passionately and articulately which enabled the rest of the team to act with confidence. Joel provided
+    leadership on the implementation of Spark jobs and ETL scripts. Joel is a friendly and approachable person to work
+    with and I will miss working with them."
+
+  - name: "Olivia Ferris"
+    image: "assets/images/testimonial/client-olivia.jpeg"
+    designation: "Cloud & Data Analytics Consultant, Venturi"
+    content: "Joel is one of the most talented Data Engineers/Consultants I've worked with. His technical capabilities
+    are second to none and his ability to move quickly yet efficiently is very impressive. I know that Joel is very
+    highly regarded within the Data space and he was an absolute pleasure to work with."
+
+  - name: "Matthew Weaver"
+    image: "assets/images/testimonial/client-matt.jpeg"
+    designation: "Director, Weaver Data Solutions"
+    content: "Joel is a highly skilled senior developer, being able to draw on a strong interest in software and data
+    science developed with a lot of work in his own time to further his knowledge. I would describe Joel as extremely
+    helpful - he will go out of his way to assist other members of a team with problems which don't directly involve
+    him, then put in long hours to catch up on his own work. He acts as a mentor to more junior team members,
+    providing guidance and advice. He also leads teams by keeping his knowledge one step ahead. Joel is a pleasure to
+    work with, and a role model for developers."
+
+  - name: "Anthony Juniper-Nine"
+    image: "assets/images/testimonial/client-aj9.jpeg"
+    designation: "Director, Juniper Nine Solutions"
+    content: "Joel is knowledgeable, articulate, passionate and a pleasure to work with. He was someone that I trusted
+    and looked toward for guidance and advice. He brings integrity and intelligence to his work and I believe his
+    overall presence was a major factor in the success of the project. He remained professional throughout and mentored
+    and integrated new starters with little disruption to the velocity of the project. I would love to work with him
+    again."
+
+#-------------------------------
 # Client Slider Section
 
 client-slider-items:
   - logo: "assets/images/clients-logo/relx-logo.png"
-    url: "#"
+    url: "https://www.relx.com/"
 
-  - logo: "assets/images/clients-logo/client-logo-hsbc_40x120.png"
-    url: "#"
+  - logo: "assets/images/clients-logo/hsbc-logo.png"
+    url: "https://www.hsbc.co.uk/"
 
-  - logo: "assets/images/clients-logo/client-logo-quantexa.png"
-    url: "#"
+  - logo: "assets/images/clients-logo/quantexa-logo.png"
+    url: "https://www.quantexa.com/"
 
   - logo: "assets/images/clients-logo/blackcat-logo.png"
-    url: "#"
+    url: "https://blackcatsolutions.co.uk/"
+
+  - logo: "assets/images/clients-logo/rbi-logo.png"
+    url: "https://www.reedbusiness.com/"
+
+  - logo: "assets/images/clients-logo/data-reply-logo.png"
+    url: "https://www.reply.com/data-reply/en/"
+
+  - logo: "assets/images/clients-logo/venturi-logo.png"
+    url: "http://www.venturi-group.com/"
 
   - logo: "assets/images/clients-logo/relx-logo.png"
-    url: "#"
+    url: "https://www.relx.com/"
 
-  - logo: "assets/images/clients-logo/client-logo-hsbc_40x120.png"
-    url: "#"
+  - logo: "assets/images/clients-logo/hsbc-logo.png"
+    url: "https://www.hsbc.co.uk/"
 
-  - logo: "assets/images/clients-logo/client-logo-quantexa.png"
-    url: "#"
+  - logo: "assets/images/clients-logo/quantexa-logo.png"
+    url: "https://www.quantexa.com/"
 
   - logo: "assets/images/clients-logo/blackcat-logo.png"
-    url: "#"
+    url: "https://blackcatsolutions.co.uk/"
+
+  - logo: "assets/images/clients-logo/rbi-logo.png"
+    url: "https://www.reedbusiness.com/"
+
+  - logo: "assets/images/clients-logo/data-reply-logo.png"
+    url: "https://www.reply.com/data-reply/en/"
+
+  - logo: "assets/images/clients-logo/venturi-logo.png"
+    url: "http://www.venturi-group.com/"
 
 #-------------------------------
 # Contact Section
