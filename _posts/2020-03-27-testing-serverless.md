@@ -29,19 +29,17 @@ regression tests, as they are often easily mixed up:
 kind of tests we write first, asserting what we expect our soon to be written function will do. We expect these tests 
 to run automatically on a Continuous Integration server for each commit. Given a function
 `def addOne(input: Int): Int = input + 1` we would expect a corresponding test which may look something like
-```scala
-addOne(-1) shouldEqual 0
-addOne(0) shouldEqual 1
-```
+
+    * `addOne(-1) shouldEqual 0`
+    * `addOne(0) shouldEqual 1`
 
 * Integration test: larger tests, where we test a workflow which may call many functions. These are more behaviour 
 focused and target how our system expects to run given different inputs. As with unit tests, we expect these tests to 
 run automatically on a Continuous Integration server for each commit. Given an application with an 
 entrypoint `def main(args: Seq[String]): Unit` we may expect an integration test to look something like
-```scala
-main(Seq("localhost:8000", "/fake-url", "30s")) shouldRaise 404
-main(Seq("localhost:8000", "/mocked-url", "30s")) shouldNotRaiseException
-```
+
+    * `main(Seq("localhost:8000", "/fake-url", "30s")) shouldRaise 404`
+    * `main(Seq("localhost:8000", "/mocked-url", "30s")) shouldNotRaiseException`
 
 * Regression test: the largest type of test, also thought of as a systems test. While unit and integration tests look to 
 test how our application behaves during changes to it, regression tests look to test how our systems behave due to our
