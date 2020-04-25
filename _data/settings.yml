@@ -9,6 +9,7 @@ address: "London, UK <br>Vancouver, Canada"
 
 menu:
 - {name: About, link: '/about'}
+- {name: Testimonials, link: '/#testimonials'}
 - {name: Blog, link: '/blog'}
 - {name: Contact, link: '/contact'}
 
