@@ -2,7 +2,7 @@
 layout: post
 title:  AWS Glue Quickstart
 date:   2020-02-01
-image:  glue_logo.png
+image:  aws-glue-quickstart/glue_logo.png
 author: jhole89
 tags:   serverless, apache spark, aws glue, sbt
 ---

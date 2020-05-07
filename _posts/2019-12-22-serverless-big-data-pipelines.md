@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Big Data Pipelines as Serverless Microservice's
+title:  Serverless Big Data Pipelines
 date:   2019-12-22 14:38:00 +0100
-image:  stepfunc_data_pipeline.jpeg
+image:  serverless-data-pipelines/stepfunc_data_pipeline.jpeg
 author: jhole89
 tags:   serverless, apache spark, aws step functions
 ---
@@ -33,7 +33,7 @@ AWS Step Functions can be used for a number of use cases and workflows including
 media files, publishing events from serverless workflows, sending messages from automated workflows, or orchestrating 
 big data workflows.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/stepfunc_data_pipeline_numbered.jpeg){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/serverless-data-pipelines/stepfunc_data_pipeline_numbered.jpeg){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
 <center><sup>Full description of architecture at end **</sup></center>
 
 In the diagram above, we illustrate a big data workflow of sourcing data into a datalake, ETL'ing our data from source 
@@ -47,7 +47,7 @@ tool such as Terraform.
 On top of our primary use case of ingesting files from any external sources, landing them to S3, enriching them with 
 business logic and transforming the data to parquet, and using the data to predict using an ML model. Leveraging such an 
 architecture we have achieved the ability to:
-![post-thumb]({{site.baseurl}}/assets/images/blog/step_func_ui.png){:class="img-fluid rounded float-right ml-5" :height="auto" width="50%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/serverless-data-pipelines/step_func_ui.png){:class="img-fluid rounded float-right ml-5" :height="auto" width="50%"}
 * Query the data at any stage via AWS Athena
 * Handle any errors or timeouts across the entire stack, route the error to a SNS topic, then onto any support team
 * Configure retries at a per service or entire stack level
@@ -68,7 +68,7 @@ Scripts into micro-service's or monorepo's
 * Avoid managing servers, clusters, databases, replication, or failure scenario's
 * Reduce our cloud spend and hidden maintenance costs by consuming resources as a service
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/asl_example.png){:class="img-fluid rounded float-right mr-5" :height="auto" width="50%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/serverless-data-pipelines/asl_example.png){:class="img-fluid rounded float-right mr-5" :height="auto" width="50%"}
 ### Configuration as Code
 
 As mentioned, one of the clear benefits of using AWS Step Functions is being able to describe and orchestrate our 
@@ -88,7 +88,7 @@ if the server were to go offline our entire stack would be non-functional, which
 performing business, and still lacks many of the other benefits discussed such as stack level error, timeout 
 handling, and configuration as code, among others.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/state_machines_private.png){:class="img-fluid rounded float mr-5 mb-2"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/serverless-data-pipelines/state_machines_private.png){:class="img-fluid rounded float mr-5 mb-2"}
 <center><sup>State Machine UI showing run metrics</sup></center>
 
 AWS Step Functions is a versatile service which allows us to focus on delivering value through orchestrating components. 

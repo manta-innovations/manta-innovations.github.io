@@ -2,7 +2,7 @@
 layout: post
 title: Testing Serverless Workflow's
 date: 2020-03-27
-image: Serverless-workflow-testable.png
+image: testing-serverless/Serverless-workflow-testable.png
 author: jhole89
 tags: serverless, testing, aws, cloud-native
 ---
@@ -48,7 +48,7 @@ may test what happens to the app when the api goes offline by utilising a local 
 happens to all services should that api go offline. We except these tests to run automatically on a Continuous Integration 
 server for each PR rather each commit.
 
-![Testing Boundaries]({{site.baseurl}}/assets/images/blog/testing-boundaries.png){:class="img-fluid rounded float" :height="auto" width="60%"}
+![Testing Boundaries]({{site.baseurl}}/assets/images/blog/testing-serverless/testing-boundaries.png){:class="img-fluid rounded float" :height="auto" width="60%"}
 
 ### Problems with Testing Serverless Workflow's
 Now that we have a firm grasp of the different types of testing, lets work through a real world example where we will see
@@ -61,7 +61,7 @@ workflow:
  3. The SNS topic sends an email to our users letting them know that the data is available to download from a link
  4. Users access the link, which is an AWS API Gateway endpoint to authorise access to the download
  
-![Our demo workflow]({{site.baseurl}}/assets/images/blog/Serverless-workflow.png){:class="img-fluid rounded float" :height="auto" width="75%"}
+![Our demo workflow]({{site.baseurl}}/assets/images/blog/testing-serverless/Serverless-workflow.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 We could expect the code for the Lambda to have unit and integration tests written alongside. These may utilise mocks 
 and utilities such as wiremock to test how this simple code would handle the various HTTP response codes, and capture 
@@ -80,7 +80,7 @@ What happens if someone logs into the console and changes the SNS topic name? Th
 integration tests, and it will still publish data to the S3 bucket. However the SNS topic will no longer receive the 
 event, and won't be able to pass on alert to our users - our workflow is broken, and even worse we're not aware of it.
 
-![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
+![Worfkflow boundaries]({{site.baseurl}}/assets/images/blog/testing-serverless/Serverless-workflow-testable.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 This is the catch-22 of testing managed/cloud-native serverless - as our workflow's become more complicated, we need rigorous testing, 
 but the more services we include, the less tested our workflow becomes. This is why regression/systems testing 
@@ -109,7 +109,7 @@ For our demo workflow, we would achieve this by deploying managed/cloud-native s
 workflow will connect to, in lieu of the real external API. We can then run a suite of tests to trigger the Lambda, and 
 assert the expected results exist at the end of our workflow via the via the workflow API Gateway.
 
-![Regression workflow]({{site.baseurl}}/assets/images/blog/serverless-workflow-ci.png){:class="img-fluid rounded float" :height="auto" width="75%"}
+![Regression workflow]({{site.baseurl}}/assets/images/blog/testing-serverless/serverless-workflow-ci.png){:class="img-fluid rounded float" :height="auto" width="75%"}
 
 Conceptually, this is very similar to running a local wiremock server as part of our test suites - well, why can't we 
 just do that instead of worrying about building infrastructure? The problem here is that running wiremock within our test
