@@ -138,15 +138,15 @@ services:
   active: true # Add true to select section
   }
 - {
-  name: Web Apps,
-  icon: ti-palette,
-  description: "Full stack web apps from simple static websites through to dynamic sites backed by SQL & NoSQL databases.",
+  name: Quality Assurance,
+  icon: ti-check-box,
+  description: "Need code appraisal for funding or an initial release - get a professional audit and review.",
   active: # Add true to select section
   }
 - {
-  name: Review & Upskill,
-  icon: ti-check-box,
-  description: "Independent code appraisal and vulnerability reviews. Take it further by ensuring your teams know the latest tools and techniques.",
+  name: Upskill,
+  icon: ti-blackboard,
+  description: "Ensure your teams know the latest tools, techniques, and best practice across big data and the cloud.",
   active: true # Add true to select section
   }
 
