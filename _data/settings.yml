@@ -116,37 +116,37 @@ services:
 - {
     name: Big Data,
     icon: ti-server,
-    description: "Big data solutions & frameworks for large scale distributed data processing and analytics; based on Apache Spark.",
+    description: "Got more data than you know how to process? Want to derive value but not sure where to start?",
     active: # Add true to select section
   }
 - {
     name: Machine Learning,
     icon: ti-panel,
-    description: "Machine Learning solutions from simple regression through to Neural Networks; based on SKLearn and TensorFlow.",
+    description: "Want to leverage your data to understand, classify, predict, or simulate future events?",
     active: true # Add true to select section
   }
 - {
     name: Cloud Architecture,
     icon: ti-cloud,
-    description: "Serverless cloud solutions reducing the risk of security vulnerabilities and platform outages; scripted with Terraform.",
+    description: "New to the cloud and migrating from on-prem? Need stable and scalable foundations to iterate apps on?",
     active: # Add true to select section
   }
 - {
-  name: DevOps & Platform Eng,
+  name: DevOps,
   icon: ti-infinite,
-  description: "Automated DevOps solutions following best practice to ensure bugs never touch live systems; using docker and kubernetes.",
+  description: "Want to iterate fast and deploy with zero downtime? Struggling with Kubernetes and automation?",
   active: true # Add true to select section
   }
 - {
   name: Quality Assurance,
   icon: ti-check-box,
-  description: "Need code appraisal for funding or an initial release - get a professional audit and review.",
+  description: "Need code appraisal or an architectural review? Want to ensure your software is sustainably built?",
   active: # Add true to select section
   }
 - {
   name: Upskill,
   icon: ti-blackboard,
-  description: "Ensure your teams know the latest tools, techniques, and best practice across big data and the cloud.",
+  description: "Need to ensure teams know the latest tools, techniques, and best practice for big data and the cloud?",
   active: true # Add true to select section
   }
 
