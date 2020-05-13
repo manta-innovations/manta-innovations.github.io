@@ -117,36 +117,48 @@ services:
     name: Big Data,
     icon: ti-server,
     description: "Got more data than you know how to process? Want to derive value but not sure where to start?",
+    link: '/contact',
+    link-text: "Find out about our big data solutions",
     active: # Add true to select section
   }
 - {
     name: Machine Learning,
     icon: ti-panel,
     description: "Want to leverage your data to understand, classify, predict, or simulate future events?",
+    link: '/contact',
+    link-text: "Let us see what we can find",
     active: true # Add true to select section
   }
 - {
     name: Cloud Architecture,
     icon: ti-cloud,
     description: "New to the cloud and migrating from on-prem? Need stable and scalable foundations to iterate apps on?",
+    link: '/contact',
+    link-text: "Kickstart your cloud journey with us",
     active: # Add true to select section
   }
 - {
   name: DevOps,
   icon: ti-infinite,
   description: "Want to iterate fast and deploy with zero downtime? Struggling with Kubernetes and automation?",
+  link: '/contact',
+  link-text: "Let us automate away your problems",
   active: true # Add true to select section
   }
 - {
   name: Quality Assurance,
   icon: ti-check-box,
   description: "Need code appraisal or an architectural review? Want to ensure your software is sustainably built?",
+  link: '/contact',
+  link-text: "Get a professional assessment",
   active: # Add true to select section
   }
 - {
   name: Upskill,
   icon: ti-blackboard,
   description: "Need to ensure teams know the latest tools, techniques, and best practice for big data and the cloud?",
+  link: '/contact',
+  link-text: "Talk to us about our series of talks",
   active: true # Add true to select section
   }
 
