@@ -16,7 +16,7 @@ not the views of the presenters, who I do not speak for.
 
 I tend to work with a lot of enterprise clients and, as much as I believe in and desire modern workflows with Kubernetes, Flux, and GitOps; my experience has been that many enterprise clients are still stuck in the traditional delivery format and have a tentative understanding of containerization and microservices.
 
-I believe this is due to the business concept of an “application” being easier to comprehend as a single monolithic codebase rather than a set of loosely coupled microservices. So I was interested to hear AWS Senior Partner Solutions Architect Gaurav Arora’s thoughts on how we as technologists and consultants deal with that, and dialled into his talk on Enterprise cloud migration meets application containerization.
+I believe this is due to the business concept of an “application” being easier to comprehend as a single monolithic codebase rather than a set of loosely coupled microservices. So I was interested to hear 8AWS Senior Partner Solutions Architect Gaurav Arora’s8 thoughts on how we as technologists and consultants deal with that, and dialled into his talk on 8Enterprise cloud migration meets application containerization8.
 
 Gaurav presented his approach to containerization of enterprise applications using a plan of:
 
