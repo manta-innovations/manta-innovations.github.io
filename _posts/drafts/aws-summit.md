@@ -1,11 +1,15 @@
 ---
 layout: post
-title:  Best practice for AWS DevOps Services
+title:  CI/CD at scale - AWS Online Summit Series
 date:   May 2020
 image:  
 author: jhole89
 tags:   cloud, aws, conference
 ---
+Welcome, this is part of my ongoing series on AWS’s recent Online Summit 2020, where I write about my thoughts and learnings from the range of topics presented. As always, the content here describes my own thoughts and understandings from the material presented, not the views of the presenters, who I do not speak for.
+
+#### What is Best Practice?
+
 While I have my own opinion of best practice, I think it’s good to constantly check your standards against peers and industry leaders to ensure you haven’t fallen behind.
 
 Therefore I decided to dial into *AWS Solution Architect Loh Yiang Meng’s talk: CI/CD at scale: Best practices with AWS DevOps services* at the AWS Summit Online in May 2020
