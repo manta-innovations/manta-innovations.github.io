@@ -16,7 +16,7 @@ not the views of the presenters, who I do not speak for.
 
 I tend to work with a lot of enterprise clients and, as much as I believe in and desire modern workflows with Kubernetes, Flux, and GitOps; my experience has been that many enterprise clients are still stuck in the traditional delivery format and have a tentative understanding of containerization and microservices.
 
-I believe this is due to the business concept of an “application” being easier to comprehend as a single monolithic codebase rather than a set of loosely coupled microservices. So I was interested to hear 8AWS Senior Partner Solutions Architect Gaurav Arora’s8 thoughts on how we as technologists and consultants deal with that, and dialled into his talk on 8Enterprise cloud migration meets application containerization8.
+I believe this is due to the business concept of an “application” being easier to comprehend as a single monolithic codebase rather than a set of loosely coupled microservices. So I was interested to hear *AWS Senior Partner Solutions Architect Gaurav Arora’s*thoughts on how we as technologists and consultants deal with that, and dialled into his talk on *Enterprise cloud migration meets application containerization*.
 
 Gaurav presented his approach to containerization of enterprise applications using a plan of:
 
@@ -44,6 +44,9 @@ This is something that I hadn’t appreciated. For so long I’ve been able to r
 
 I’d forgotten that so much enterprise software was reliant on obscure versions of specific software that might be entirely closed source, what about if an application is only built to run on some Windows platform - how do I containerize that?!?!
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/Docker.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+<figcaption> Source:Enterprise cloud migration meets application containerization - Gaurav Arora, AWS Senior Partner Solutions Architect</figcaption>
+
 ### Design, Migrate & Operation
 
 Gaurav talked about how for both Design and Migration, enterprise should consider a three tier/stage approach.
@@ -53,6 +56,9 @@ Gaurav talked about how for both Design and Migration, enterprise should conside
 2. Stage two - would be the design and creation of the cluster environment, would you use ECS or Fargate, what about kubernetes, do you use ECR, what about load balancers. 
 
 3. Stage three - would be the actual container architecture, which base image do you use, how many replicas should we run?
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/Containers.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+<figcaption> Source:Enterprise cloud migration meets application containerization - Gaurav Arora, AWS Senior Partner Solutions Architect</figcaption>
 
 
 Overall, although I completely agree with Gaurav and understand how recent containerization is in the eyes of some enterprise business, more than anything I was left a little disheartened.
