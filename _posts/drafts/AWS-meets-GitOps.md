@@ -24,6 +24,8 @@ This talk did not disappoint.
 
 After covering the basics concepts of CICD we went straight into an overview of Flux, the GitOps operator for Kubernetes and part of the CNCF; and what GitOps actually means to a workflow, mainly being able to control deployments via Pull Requests to your master/release branch.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/GitOps%20-%20image.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+<figcaption> Source: Kubernetes GitOps on AWS - Jason Umiker, AWS Solution Architect </figcaption>
 
 ### A convincing argument for GitOps
 
@@ -33,6 +35,8 @@ He highlighted that all developers already use git for many great reasons that a
 
 By tying the actual release management and deployment to git, we can now have a single tool in control of not only our development and iteration, but also our deployment.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/GitOps%20-%20cycles.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+<figcaption> Source: Kubernetes GitOps on AWS - Jason Umiker, AWS Solution Architect </figcaption>
 
 ### Ghost in the Machine
 
@@ -43,6 +47,9 @@ Here he merged a PR that changed the RDS definition which the Ghost app used for
 This CodeBuild stage actually has a very simple buildspec.yml that just issues the `cdk deploy` (for those not familiar with AWS CDK this is the equivalent of a `terraform apply`) which applies the change to the RDS resource. At the same time we have Flux monitoring the same repository via a webhook, which has performed a new deployment for the change to the Ghost manifest yaml.
 
 And there we had it, in a single PR he had committed, reviewed, and deployed a change to both the AWS managed infrastructure, and the Kubernetes managed service.
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/GitOps%20-%20flux%20overview.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+<figcaption> Source: Kubernetes GitOps on AWS - Jason Umiker, AWS Solution Architect </figcaption>
 
 This talk was great and made me realise that I need to spend more time with Flux, especially in light of the Argo Flux collaboration which happened back in November, as this is the exact CICD workflow I’ve always desired.
 
