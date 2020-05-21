@@ -36,9 +36,9 @@ I’m also not sure I’d trust Alexa with doing my production deployments - wha
 ![post-thumb]({{site.baseurl}}/assets/images/blog/Twitter%20alexa.png){:class="img-fluid rounded float-right mr-5" :height="auto" width="50%"}
 <center><sup>Source: boredpanada.com </sup></center>
 
-That said Loh Yiang Meng was very engaging as a presenter and some of his comments on best practice definitely aligned with my own. In particular he highlighted that we should automate everything because humans make mistakes; that 
+### “DevOps is not a product, but a culture”
 
-> “DevOps is not a product, but a culture”
+That said Loh Yiang Meng was very engaging as a presenter and some of his comments on best practice definitely aligned with my own. In particular he highlighted that we should automate everything because humans make mistakes; that 
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
 <center><sup>Source: CI/CD at scale: Best practices with AWS DevOps services - Loh Yiang Meng, AWS Solution Architect</sup></center>
