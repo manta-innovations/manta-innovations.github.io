@@ -36,7 +36,9 @@ Here they gave us an overview of their CICD pipeline, which followed Loh’s use
 
 While their design of sourcing (CodeCommit), building (CodeBuild), publishing (ECR), and orchestration (CodePipeline), followed best practice CI, and the Alexa skill definitely had the wow factor, this still involved some manual intervention to trigger deployments. Sure the Alexa skill made deployments easier, but is it really any different from someone clicking “run” on a jenkins job? 
 
+
 I’m also not sure I’d trust Alexa with doing my production deployments - what happens if a colleague said the wrong release number?
+
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/Twitter%20alexa.png){:class="img-fluid rounded float-right mr-5" :height="auto" width="50%"}
 <center><sup>Source: boredpanada.com </sup></center>
