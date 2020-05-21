@@ -47,7 +47,6 @@ I’d forgotten that so much enterprise software was reliant on obscure versions
 ![post-thumb]({{site.baseurl}}/assets/images/blog/Docker.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
 <center><sup>Source: Enterprise cloud migration meets application containerization - Gaurav Arora, AWS Senior Partner Solutions Architect<center><sup>
 
-
 ### Design, Migrate & Operation
 
 Gaurav talked about how for both Design and Migration, enterprise should consider a three tier/stage approach.
