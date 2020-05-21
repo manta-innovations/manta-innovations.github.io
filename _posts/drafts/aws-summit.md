@@ -8,7 +8,7 @@ tags:   cloud, aws, conference
 ---
 While I have my own opinion of best practice, I think it’s good to constantly check your standards against peers and industry leaders to ensure you haven’t fallen behind.
 
-Therefore I decided to dial into *AWS Solution Architect Loh Yiang Meng’s talk: CI/CD at scale: Best practices with AWS DevOps services* at the AWS Summit Online 2020
+Therefore I decided to dial into *AWS Solution Architect Loh Yiang Meng’s talk: CI/CD at scale: Best practices with AWS DevOps services* at the AWS Summit Online May 2020
 
 Overall I felt that this talk was best pitched for those unfamiliar with the AWS CICD tools, as he gave a good overview of the AWS Developer tools (Code Commit/Build/Deploy/Pipeline), and how these integrate with each other. For more info on these check out the docs on [AWS CodePipeline](https://aws.amazon.com/codepipeline/).
 
