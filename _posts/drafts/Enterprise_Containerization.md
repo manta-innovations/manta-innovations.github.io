@@ -63,3 +63,4 @@ Gaurav talked about how for both Design and Migration, enterprise should conside
 Overall, although I completely agree with Gaurav and understand how recent containerization is in the eyes of some enterprise business, more than anything I was left a little disheartened.
 
 The fact that we are still talking about how we containerize enterprise applications shows how many applications there are out there that are still waiting to get, or just can’t be containerized.
+
