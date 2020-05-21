@@ -2,7 +2,7 @@
 layout: post
 title:  CI/CD at scale - AWS Online Summit Series
 date:   May 2020
-image:  
+image:  DevOPS.png
 author: jhole89
 tags:   cloud, aws, conference
 ---
