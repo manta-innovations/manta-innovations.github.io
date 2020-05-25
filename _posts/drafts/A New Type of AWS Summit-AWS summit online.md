@@ -19,7 +19,7 @@ So instead I chose the talks that I would have attended had it been in person, a
 With all of these talks I want to emphasise that these are my own views and how I interpreted/understood the content presented to me, 
 rather than the views of the speakers.
 
-## What was a virtual conference like?
+### What was a virtual conference like?
 
 Before I go into talking about each talk, I thought I’d write a bit about what attending a virtual conference was like? 
 
@@ -47,6 +47,8 @@ been able to attend an in person conference. Whether due to travel, cost, physic
 or work deadlines. There are many reasons why someone might not be able to attend a traditional conference, and many 
 of these disappear in a virtual format.
 
+### Not as personal as traditional conferences, but there are lessons to be learnt
+
 Overall I would say this felt a lot less fun than a traditional conference, and I personally found it a lot more of a clinical 
 and lonely experience. 
 
@@ -62,4 +64,17 @@ However, who knows when we will be able to  attend conferences again, so online 
 foreseeable future. 
 
 *If you’ve attended an online conference recently - what was your experience?* 
+
+
+With all that said, read on for my write ups of the talks I did attend;
+
+[Kubernetes GitOps on AWS 
+Jason Umiker, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/AWS-meets-GitOps/)
+
+
+[Enterprise cloud migration meets application containerization
+Gaurav Arora, AWS Senior Partner Solutions Architect](https://manta-innovations.co.uk/2020/05/01/Enterprise_Containerization/)
+
+[CI/CD at scale: Best practices with AWS DevOps services
+Loh Yiang Meng, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/aws-summit/)
 
