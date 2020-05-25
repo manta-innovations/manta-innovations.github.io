@@ -2,7 +2,7 @@
 layout: post
 title: Enterprise & Containerization - AWS Online Summit Series
 date:   May 2020
-image:  
+image:  Docker.png
 author: jhole89
 tags:   cloud, aws, conference
 ---
