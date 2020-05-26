@@ -55,3 +55,15 @@ And there we had it, in a single PR he had committed, reviewed, and deployed a c
 This talk was great and made me realise that I need to spend more time with Flux, especially in light of the Argo Flux collaboration which happened back in November, as this is the exact CICD workflow I’ve always desired.
 
 From a developers point of view being able to finish my tasks with a PR is the ideal. I don’t need to worry if my PR made it into the “Friday release”, or whether there were any issues during deployment, if it’s merged it’s done.
+
+#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+
+[A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
+
+[Enterprise cloud migration meets application containerization -
+Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/21/enterprise-containerization/)
+
+[CI/CD at scale: Best practices with AWS DevOps services -
+Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/22/cicd-at-scale/)
+
+[What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/24/aws-summit-online/)
