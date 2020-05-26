@@ -27,7 +27,7 @@ So instead I chose the talks that I would have attended had it been in person, a
 With all of these talks I want to emphasise that these are my own views and how I interpreted/understood the content presented to me, 
 rather than the views of the speakers.
 
-### Will 2020 see organisations move the cloud? 
+### Will 2020 see more organisations move to the cloud? 
 
 Amazon’s CTO, Werner Vogels, thinks so;
 
