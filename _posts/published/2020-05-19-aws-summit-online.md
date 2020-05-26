@@ -9,23 +9,12 @@ tags: cloud, aws, conference
 
 Welcome, this is part of my ongoing series on AWS’s recent Online Summit 2020, where I write about my thoughts and learnings from the range of topics presented. As always, the content here describes my own thoughts and understandings from the material presented, not the views of the presenters, who I do not speak for.
 
-### My thoughts and learning points from the AWS Summit Online 2020
-
-Recently I attended, via video conference, the AWS Summit 2020 (US & Canada).
-This was AWS’s first Online only summit, and I wanted to share my write up and thoughts from the talks/videos I attended.
-
-Given that all the talks were actually pre-recorded videos, I could have watched each one over several days after the event.
-However, I still wanted to emulate the feeling of a conference, and let's be honest, there's only so much time in the day.
-
-So instead I chose the talks that I would have attended had it been in person, and ones that lined up on the virtual agenda.
-With all of these talks I want to emphasise that these are my own views and how I interpreted/understood the content presented to me,
-rather than the views of the speakers.
-
-![post-thumb]({{site.baseurl}}/assets/images/blog/tyler-callahan-e_RpjNyMgEM-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 ### What was a virtual conference like?
 
-Before I go into talking about each talk, I thought I’d write a bit about what attending a virtual conference was like?
+Now that I’ve written up each talk, I thought I’d write a bit about what attending a virtual conference was like?
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/unsplash-NuFUbftUu_s-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 The first thing I noticed is that all the videos were pre-recorded, rather than live streams.
 This meant that there was no back and forth with the presenters, and that any questions were instead answered
@@ -38,8 +27,6 @@ Compared to a usual conference where I may attend with colleagues or friends, wh
 ideas about the subject matter, being virtual did not give me this sense of camaraderie.
 In hindsight, I should have tried to arrange for a group of friends to all dial into the conference on a shared zoom call,
 as I know this has worked for others in the past.
-
-![post-thumb]({{site.baseurl}}/assets/images/blog/unsplash-NuFUbftUu_s-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 On the plus side, being able to listen to any talk I wanted to, and being able to quickly switch between talks
 if I realised the talk I was listening to wasn’t actually of interest, gave me much more freedom.
