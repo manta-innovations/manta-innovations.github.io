@@ -62,3 +62,16 @@ However, who knows when we will be able to attend conferences again, so online c
 foreseeable future.
 
 _If you’ve attended an online conference recently - what was your experience?_
+
+#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+
+[A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
+
+[Kubernetes GitOps on AWS -
+Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/20/aws-meets-gitops/)
+
+[Enterprise cloud migration meets application containerization -
+Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/21/enterprise-containerization/)
+
+[CI/CD at scale: Best practices with AWS DevOps services -
+Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/22/cicd-at-scale/)
