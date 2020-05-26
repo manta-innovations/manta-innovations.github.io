@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  A New Type of AWS Summit - AWS Online Summit Series
+title:  A new yype of conference - AWS Online Summit Series
 date:   May 2020
 image:  unsplash-NuFUbftUu_s-unsplash.jpg
 author: jhole89
