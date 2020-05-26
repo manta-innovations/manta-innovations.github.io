@@ -13,6 +13,8 @@ thoughts and learnings from the range of topics presented.
 The content here describes my own thoughts and understandings from 
 the material presented, not the views of the presenters, who I do not speak for.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/caspar-camille-rubin-0qvBNep1Y04-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 ### My thoughts and learning points from the AWS Summit Online 2020
 
 Recently I attended, via video conference, the AWS Summit 2020 (US & Canada). This was AWS’s first Online only summit 
