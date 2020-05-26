@@ -9,10 +9,9 @@ tags: cloud, aws, conference
 
 Welcome, this is part of my ongoing series on AWS’s recent Online Summit 2020, where I write about my thoughts and learnings from the range of topics presented. As always, the content here describes my own thoughts and understandings from the material presented, not the views of the presenters, who I do not speak for.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/unsplash-NuFUbftUu_s-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 ### What was a virtual conference like?
-
-![post-thumb]({{site.baseurl}}/assets/images/blog/unsplash-NuFUbftUu_s-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 Now that I’ve written up each talk, I thought I’d write a bit about what attending a virtual conference was like?
 
@@ -61,14 +60,3 @@ However, who knows when we will be able to attend conferences again, so online c
 foreseeable future.
 
 _If you’ve attended an online conference recently - what was your experience?_
-
-#### With all that said, read my AWS Summit series for my write ups on the talks I attended
-
-[Kubernetes GitOps on AWS -
-Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/01/aws-meets-gitops/)
-
-[Enterprise cloud migration meets application containerization -
-Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/01/enterprise-containerization/)
-
-[CI/CD at scale: Best practices with AWS DevOps services -
-Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/01/cicd-at-scale/)
