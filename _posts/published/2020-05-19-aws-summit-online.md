@@ -78,10 +78,10 @@ _If you’ve attended an online conference recently - what was your experience?_
 #### With all that said, read my AWS Summit series for my write ups on the talks I attended
 
 [Kubernetes GitOps on AWS -
-Jason Umiker, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/AWS-meets-GitOps/)
+Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/01/aws-meets-gitops/)
 
 [Enterprise cloud migration meets application containerization -
-Gaurav Arora, AWS Senior Partner Solutions Architect](https://manta-innovations.co.uk/2020/05/01/Enterprise_Containerization/)
+Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/01/enterprise-containerization/)
 
 [CI/CD at scale: Best practices with AWS DevOps services -
-Loh Yiang Meng, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/aws-summit/)
+Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/01/cicd-at-scale/)

@@ -24,7 +24,7 @@ This talk did not disappoint.
 
 After covering the basics concepts of CICD we went straight into an overview of Flux, the GitOps operator for Kubernetes and part of the CNCF; and what GitOps actually means to a workflow, mainly being able to control deployments via Pull Requests to your master/release branch.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/GitOps%20-%20image.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/GitOps%20-%20image.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="60%"}
 
 <center><sup>Source: Kubernetes GitOps on AWS - Jason Umiker, AWS Solution Architect</sup></center>
 
