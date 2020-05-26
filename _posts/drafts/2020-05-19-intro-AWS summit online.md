@@ -42,9 +42,10 @@ to WFH practices, as individuals and organizations alike lean on the cloud to su
 He predicted that in 2020 and beyond, we would see most organisations moving to a completely cloud based environment 
 as it would allow their workers to access any application, service, or data, from anywhere in the world. 
 
-A sentiment I share, and something I'm not surprised to hear from the author of All Things Distributed.
+A sentiment I share, and something I'm not surprised to hear from the author of [All Things Distributed](https://www.allthingsdistributed.com/).
 
 #### With all that said, read my AWS Summit series for my write ups on the talks I attended
+
 
 [Kubernetes GitOps on AWS -
 Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/01/aws-meets-gitops/)
@@ -56,6 +57,4 @@ Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/0
 Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/01/cicd-at-scale/)
 
 [What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/01/aws-summit-online/)
-
-
 
