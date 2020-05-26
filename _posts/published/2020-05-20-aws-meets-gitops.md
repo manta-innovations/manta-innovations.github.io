@@ -56,7 +56,7 @@ This talk was great and made me realise that I need to spend more time with Flux
 
 From a developers point of view being able to finish my tasks with a PR is the ideal. I don’t need to worry if my PR made it into the “Friday release”, or whether there were any issues during deployment, if it’s merged it’s done.
 
-#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+#### For more on my AWS Summit series, check out the summaries on the talks I attended below;
 
 [A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
 
