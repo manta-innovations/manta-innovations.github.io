@@ -76,7 +76,7 @@ foreseeable future.
 *If you’ve attended an online conference recently - what was your experience?* 
 
 
-#### With all that said, read on for my write ups of the talks I did attend
+#### With all that said, read my AWS Summit series for my write ups on the talks I attended
 
 [Kubernetes GitOps on AWS - 
 Jason Umiker, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/AWS-meets-GitOps/)
