@@ -63,7 +63,7 @@ foreseeable future.
 
 _If you’ve attended an online conference recently - what was your experience?_
 
-#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+#### For more on my AWS Summit series, check out the summaries on the talks I attended below;
 
 [A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
 
