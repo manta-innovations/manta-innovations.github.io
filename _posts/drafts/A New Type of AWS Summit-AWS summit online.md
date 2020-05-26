@@ -58,6 +58,7 @@ and lonely experience.
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/samuel-pereira-uf2nnANWa8Q-unsplash.jpg
 ){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+<center><sup>It might be a while before we can attend conferences likes this again</sup></center>
 
 The keynote and fireside chats did better at giving us a personal touch, as these were clearly filmed from the presenters 
 personal office spaces, while the technical talks were presented in front of an AWS-orange screen. 
@@ -67,7 +68,7 @@ however if it's a choice between attending one online or in person, I’d prefer
 That said, it may be worth adopting some lessons from online conferences such as live recording the talks and sharing 
 them with participants afterwards, as not all conferences provide these.
 
-However, who knows when we will be able to  attend conferences again, so online conferences might become the norm for the 
+However, who knows when we will be able to attend conferences again, so online conferences might become the norm for the 
 foreseeable future. 
 
 *If you’ve attended an online conference recently - what was your experience?* 
