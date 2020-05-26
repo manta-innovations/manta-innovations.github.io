@@ -52,7 +52,7 @@ That said Loh Yiang Meng was very engaging as a presenter and some of his commen
 
 <center><sup>Source: CI/CD at scale: Best practices with AWS DevOps services - Loh Yiang Meng, AWS Solution Architect</sup></center>
 
-#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+#### For more on my AWS Summit series, check out the summaries on the talks I attended below;
 
 [A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
 
