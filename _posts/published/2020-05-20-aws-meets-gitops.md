@@ -66,4 +66,4 @@ Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/2
 [CI/CD at scale: Best practices with AWS DevOps services -
 Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/22/cicd-at-scale/)
 
-[What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/24/aws-summit-online/)
+[What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/24/virtual-conf/)
