@@ -2,7 +2,7 @@
 layout: post
 title: A new type of AWS Summit - AWS Online Summit Series
 date: May 2020
-image: 
+image: caspar-camille-rubin-0qvBNep1Y04-unsplash.jpg
 author: jhole89
 tags: cloud, aws, conference
 ---
