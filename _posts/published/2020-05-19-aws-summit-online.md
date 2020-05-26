@@ -27,6 +27,8 @@ ideas about the subject matter, being virtual did not give me this sense of cama
 In hindsight, I should have tried to arrange for a group of friends to all dial into the conference on a shared zoom call,
 as I know this has worked for others in the past.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/tyler-callahan-e_RpjNyMgEM-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 On the plus side, being able to listen to any talk I wanted to, and being able to quickly switch between talks
 if I realised the talk I was listening to wasn’t actually of interest, gave me much more freedom.
 
