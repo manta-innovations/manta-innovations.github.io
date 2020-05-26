@@ -51,3 +51,15 @@ That said Loh Yiang Meng was very engaging as a presenter and some of his commen
 ![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="90%"}
 
 <center><sup>Source: CI/CD at scale: Best practices with AWS DevOps services - Loh Yiang Meng, AWS Solution Architect</sup></center>
+
+#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+
+[A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
+
+[Kubernetes GitOps on AWS -
+Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/20/aws-meets-gitops/)
+
+[Enterprise cloud migration meets application containerization -
+Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/21/enterprise-containerization/)
+
+[What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/24/virtual-conf/)
