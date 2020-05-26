@@ -12,9 +12,9 @@ Welcome, this is part of my ongoing series on AWS’s recent Online Summit 2020,
 
 ### What was a virtual conference like?
 
-Now that I’ve written up each talk, I thought I’d write a bit about what attending a virtual conference was like?
-
 ![post-thumb]({{site.baseurl}}/assets/images/blog/unsplash-NuFUbftUu_s-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
+Now that I’ve written up each talk, I thought I’d write a bit about what attending a virtual conference was like?
 
 The first thing I noticed is that all the videos were pre-recorded, rather than live streams.
 This meant that there was no back and forth with the presenters, and that any questions were instead answered
