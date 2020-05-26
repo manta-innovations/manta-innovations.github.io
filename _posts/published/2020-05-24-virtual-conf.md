@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What was it like to attend a virtual conference? - AWS Online Summit Series
-date: May 2020
+date: 2020-05-24
 image: unsplash-NuFUbftUu_s-unsplash.jpg
 author: jhole89
 tags: cloud, aws, conference
