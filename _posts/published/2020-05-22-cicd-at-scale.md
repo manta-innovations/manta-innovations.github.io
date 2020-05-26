@@ -9,17 +9,18 @@ tags: cloud, aws, conference
 
 Welcome, this is part of my ongoing series on AWS’s recent Online Summit 2020, where I write about my thoughts and learnings from the range of topics presented. As always, the content here describes my own thoughts and understandings from the material presented, not the views of the presenters, who I do not speak for.
 
-#### What is Best Practice?
+### What is Best Practice?
 
 While I have my own opinion of best practice, I think it’s good to constantly check your standards against peers and industry leaders to ensure you haven’t fallen behind.
 
 Therefore I decided to dial into _AWS Solution Architect Loh Yiang Meng’s talk: CI/CD at scale: Best practices with AWS DevOps services_ at the AWS Summit Online in May 2020
 
-Overall I felt that this talk was best pitched for those unfamiliar with the AWS CICD tools, as he gave a good overview of the AWS Developer tools (Code Commit/Build/Deploy/Pipeline), and how these integrate with each other. For more info on these check out the docs on [AWS CodePipeline](https://aws.amazon.com/codepipeline/).
+Overall I felt that this talk was best pitched for those unfamiliar with the AWS CICD tools, as he gave a good overview of the AWS Developer tools (Code Commit/Build/Deploy/Pipeline), and how these integrate with each other.
+For more info on these check out the docs on [AWS CodePipeline](https://aws.amazon.com/codepipeline/).
 
-### Codepipeline now supports integration with Bitbucket Cloud
+### CodePipeline supports integration with Bitbucket
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/Bitbucket.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/Bitbucket.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 <center><sup>Source: CI/CD at scale: Best practices with AWS DevOps services - Loh Yiang Meng, AWS Solution Architect</sup></center>
 
@@ -31,7 +32,7 @@ While I’ve used GitLab extensively in enterprise environments (and much prefer
 
 Lastly, Loh introduced Martin Lim, CEO, and Arshad Zackeriya, Senior DevOps Engineer, from Electrify Asia to talk about their CICD journey with AWS.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/AWS%20CLOUD.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/AWS%20CLOUD.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="90%"}
 
 <center><sup>Source: CI/CD at scale: Best practices with AWS DevOps services - Loh Yiang Meng, AWS Solution Architect</sup></center>
 
@@ -39,9 +40,7 @@ Here they gave us an overview of their CICD pipeline, which followed Loh’s use
 
 While their design of sourcing (CodeCommit), building (CodeBuild), publishing (ECR), and orchestration (CodePipeline), followed best practice CI, and the Alexa skill definitely had the wow factor, this still involved some manual intervention to trigger deployments. Sure the Alexa skill made deployments easier, but is it really any different from someone clicking “run” on a jenkins job?
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/Twitter%20alexa.png){:class="img-fluid rounded float-right mr-5" :height="auto" width="50%"}
-
-<center><sup>Source: boredpanada.com </sup></center>
+![post-thumb]({{site.baseurl}}/assets/images/blog/Twitter%20alexa.png){:class="img-fluid rounded float mb-2 mx-auto" :height="auto" width="50%"}
 
 I’m also not sure I’d trust Alexa with doing my production deployments - what happens if a colleague said the wrong release number?
 
@@ -49,6 +48,6 @@ I’m also not sure I’d trust Alexa with doing my production deployments - wha
 
 That said Loh Yiang Meng was very engaging as a presenter and some of his comments on best practice definitely aligned with my own. In particular he highlighted that we should automate everything because humans make mistakes; that
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS.png){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="90%"}
 
 <center><sup>Source: CI/CD at scale: Best practices with AWS DevOps services - Loh Yiang Meng, AWS Solution Architect</sup></center>
