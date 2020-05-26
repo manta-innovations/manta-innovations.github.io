@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS meets GitOps - AWS Online Summit Series
-date: May 2020
+date: 2020-05-20
 image: GitOps%20-%20image.png
 author: jhole89
 tags: cloud, aws, conference
