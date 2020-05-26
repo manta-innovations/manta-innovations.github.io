@@ -45,7 +45,7 @@ as it would allow their workers to access any application, service, or data, fro
 A sentiment I share, and something I'm not surprised to hear from the author of [All Things Distributed](https://www.allthingsdistributed.com/).
 
 
-#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+#### For more on my AWS Summit series, check out the summaries on the talks I attended below;
 
 
 [Kubernetes GitOps on AWS -
