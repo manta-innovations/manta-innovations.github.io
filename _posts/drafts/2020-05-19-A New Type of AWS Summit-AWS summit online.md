@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  A new yype of conference - AWS Online Summit Series
+title:  A new type of conference - AWS Online Summit Series
 date:   May 2020
 image:  unsplash-NuFUbftUu_s-unsplash.jpg
 author: jhole89
 tags:   cloud, aws, conference
 ---
 
-### My thoughts and learning points from the AWS Summit Online 2020
+#### My thoughts and learning points from the AWS Summit Online 2020
 
 Recently I attended, via video conference, the AWS Summit 2020 (US & Canada). 
 This was AWS’s first Online only summit and I wanted to share my write up and thoughts from the talks/videos I attended.
@@ -21,7 +21,7 @@ rather than the views of the speakers.
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/tyler-callahan-e_RpjNyMgEM-unsplash.jpg){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
 
-### What was a virtual conference like?
+#### What was a virtual conference like?
 
 Before I go into talking about each talk, I thought I’d write a bit about what attending a virtual conference was like? 
 
@@ -51,7 +51,7 @@ been able to attend an in person conference. Whether due to travel, cost, physic
 or work deadlines. There are many reasons why someone might not be able to attend a traditional conference, and many 
 of these disappear in a virtual format.
 
-### Not as personal as traditional conferences, but there are lessons to be learnt
+#### Not as personal as traditional conferences, but there are lessons to be learnt
 
 Overall I would say this felt a lot less fun than a traditional conference, and I personally found it a lot more of a clinical 
 and lonely experience. 
@@ -74,7 +74,7 @@ foreseeable future.
 *If you’ve attended an online conference recently - what was your experience?* 
 
 
-### With all that said, read on for my write ups of the talks I did attend
+#### With all that said, read on for my write ups of the talks I did attend
 
 [Kubernetes GitOps on AWS - 
 Jason Umiker, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/AWS-meets-GitOps/)
