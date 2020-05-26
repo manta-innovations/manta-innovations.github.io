@@ -64,7 +64,7 @@ Overall, although I completely agree with Gaurav and understand how recent conta
 
 The fact that we are still talking about how we containerize enterprise applications shows how many applications there are out there that are still waiting to get, or just can’t be containerized.
 
-#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+#### For more on my AWS Summit series, check out the summaries on the talks I attended below;
 
 [A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
 
