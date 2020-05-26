@@ -19,6 +19,8 @@ So instead I chose the talks that I would have attended had it been in person, a
 With all of these talks I want to emphasise that these are my own views and how I interpreted/understood the content presented to me, 
 rather than the views of the speakers.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/tyler-callahan-e_RpjNyMgEM-unsplash.jpg){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+
 ### What was a virtual conference like?
 
 Before I go into talking about each talk, I thought I’d write a bit about what attending a virtual conference was like? 
@@ -34,6 +36,8 @@ Compared to a usual conference where I may attend with colleagues or friends, wh
 ideas about the subject matter, being virtual did not give me this sense of camaraderie. 
 In hindsight, I should have tried to arrange for a group of friends to all dial into the conference on a shared zoom call, 
 as I know this has worked for others in the past.
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/unsplash-NuFUbftUu_s-unsplash.jpg){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
 
 On the plus side, being able to listen to any talk I wanted to, and being able to quickly switch between talks 
 if I realised the talk I was listening to wasn’t actually of interest, gave me much more freedom. 
@@ -52,6 +56,9 @@ of these disappear in a virtual format.
 Overall I would say this felt a lot less fun than a traditional conference, and I personally found it a lot more of a clinical 
 and lonely experience. 
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/samuel-pereira-uf2nnANWa8Q-unsplash.jpg
+){:class="img-fluid rounded float mr-5 mb-2 ml-5" :height="auto" width="90%"}
+
 The keynote and fireside chats did better at giving us a personal touch, as these were clearly filmed from the presenters 
 personal office spaces, while the technical talks were presented in front of an AWS-orange screen. 
 
@@ -66,7 +73,7 @@ foreseeable future.
 *If you’ve attended an online conference recently - what was your experience?* 
 
 
-With all that said, read on for my write ups of the talks I did attend;
+### With all that said, read on for my write ups of the talks I did attend
 
 [Kubernetes GitOps on AWS - 
 Jason Umiker, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/AWS-meets-GitOps/)
