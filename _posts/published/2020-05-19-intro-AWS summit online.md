@@ -49,13 +49,13 @@ A sentiment I share, and something I'm not surprised to hear from the author of 
 
 
 [Kubernetes GitOps on AWS -
-Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/01/aws-meets-gitops/)
+Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/20/aws-meets-gitops/)
 
 [Enterprise cloud migration meets application containerization -
-Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/01/enterprise-containerization/)
+Gaurav Arora, AWS Senior Partner Solutions Architect]({{site.baseurl}}/2020/05/21/enterprise-containerization/)
 
 [CI/CD at scale: Best practices with AWS DevOps services -
-Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/01/cicd-at-scale/)
+Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/22/cicd-at-scale/)
 
-[What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/01/aws-summit-online/)
+[What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/24/aws-summit-online/)
 
