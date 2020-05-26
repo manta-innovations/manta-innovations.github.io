@@ -7,7 +7,7 @@ author: jhole89
 tags: cloud, aws, conference
 ---
 
-Welcome, this is part of my ongoing series on AWS’s recent Online Summit 2020, where I write about my 
+Welcome, this is the beginning of my series on AWS’s recent Online Summit 2020; where I write about my 
 thoughts and learnings from the range of topics presented. 
 
 The content here describes my own thoughts and understandings from 
