@@ -63,3 +63,16 @@ Gaurav talked about how for both Design and Migration, enterprise should conside
 Overall, although I completely agree with Gaurav and understand how recent containerization is in the eyes of some enterprise business, more than anything I was left a little disheartened.
 
 The fact that we are still talking about how we containerize enterprise applications shows how many applications there are out there that are still waiting to get, or just can’t be containerized.
+
+#### For more on my AWS Summit series, check out the summaries of the talks I attended below;
+
+[A new type of AWS Summit](https://manta-innovations.co.uk/2020/05/19/intro-AWS-summit-online/)
+
+[Kubernetes GitOps on AWS -
+Jason Umiker, AWS Solution Architect]({{site.baseurl}}/2020/05/20/aws-meets-gitops/)
+
+[CI/CD at scale: Best practices with AWS DevOps services -
+Loh Yiang Meng, AWS Solution Architect]({{site.baseurl}}/2020/05/22/cicd-at-scale/)
+
+[What was it like to attend a virtual conference?](https://manta-innovations.co.uk/2020/05/24/virtual-conf/)
+
