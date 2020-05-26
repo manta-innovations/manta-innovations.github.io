@@ -68,13 +68,13 @@ foreseeable future.
 
 With all that said, read on for my write ups of the talks I did attend;
 
-[Kubernetes GitOps on AWS 
+[Kubernetes GitOps on AWS - 
 Jason Umiker, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/AWS-meets-GitOps/)
 
 
-[Enterprise cloud migration meets application containerization
+[Enterprise cloud migration meets application containerization -
 Gaurav Arora, AWS Senior Partner Solutions Architect](https://manta-innovations.co.uk/2020/05/01/Enterprise_Containerization/)
 
-[CI/CD at scale: Best practices with AWS DevOps services
+[CI/CD at scale: Best practices with AWS DevOps services - 
 Loh Yiang Meng, AWS Solution Architect](https://manta-innovations.co.uk/2020/05/01/aws-summit/)
 
