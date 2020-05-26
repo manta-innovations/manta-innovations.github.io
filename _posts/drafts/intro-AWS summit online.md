@@ -31,7 +31,7 @@ rather than the views of the speakers.
 
 Amazon’s CTO, Werner Vogels, thinks so;
 
-"If nothing else, these past few months have truly ushered in an era in technology where we are seeing fundamental shifts 
+> "If nothing else, these past few months have truly ushered in an era in technology where we are seeing fundamental shifts 
 in how everyone is feeling, not only in technology itself but how to access that technology, as well as how we build 
 that technology” - Werner Vogels, Amazon CTO
 
