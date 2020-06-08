@@ -14,8 +14,8 @@ from the material presented, not the views of the presenters, who I do not speak
 ### What is MLOps? - AWS Online Summit Series
 
 Having originally come from a Data Science and ML background, before focusing on Cloud implementations and Serverless, I
-was interested in AWS AI Specialist Solutions Architect Julian Bright’s talk on Machine learning ops: DevOps for data
-science.
+was interested in AWS AI Specialist Solutions Architect *Julian Bright’s talk on Machine learning ops: DevOps for data
+science*.
 
 ### Ops, Ops, Ops
 
@@ -93,7 +93,9 @@ CI/CD at scale: Best practices with AWS DevOps services]({{site.baseurl}}/2020/0
 This did make me think, if we can use the same processes and tooling for both application and ML models, then why should
 we treat ML models any differently to applications?
 
-Anyway, I deviate. So now that we are able to deploy our model, how do we orchestrate it?
+Anyway, I deviate. 
+
+So now that we are able to deploy our model, how do we orchestrate it?
 
 Compared to apps, many ML and Data Science models are written more as scripts than a service; and as highlighted, we may
 need to perform some small steps such as data cleansing and validation prior to using our model.
