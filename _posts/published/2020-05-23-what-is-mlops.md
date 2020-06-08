@@ -11,7 +11,7 @@ Welcome, this is part of my ongoing series on AWS’s recent Online Summit 2020,
 learnings from the range of topics presented. As always, the content here describes my own thoughts and understandings
 from the material presented, not the views of the presenters, who I do not speak for.
 
-### What is MLOps? - AWS Online Summit Series
+### What is MLOps?
 
 Having originally come from a Data Science and ML background, before focusing on Cloud implementations and Serverless, I
 was interested in AWS AI Specialist Solutions Architect *Julian Bright’s talk on Machine learning ops: DevOps for data
