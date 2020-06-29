@@ -117,7 +117,7 @@ services:
     name: Big Data,
     icon: ti-server,
     description: "Got more data than you know how to process? Want to derive value but not sure where to start?",
-    link: '/contact',
+    link: '/big-data',
     link-text: "Find out about our big data solutions",
     active: # Add true to select section
   }
