@@ -21,9 +21,8 @@ AWS Connect is a versatile way of building and managing a completely serverless 
 
 It can be used as a simple way of managing agents and connecting customers with them, or as a way of building complex routing systems that can use multiple customer inputs and diverging paths to route customers to different agent teams.
 
-assets/images/blog/aws-connect-overview/Aws connect logo_Connect-2.jpg
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/Aws connect logo_Connect-2.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/woman-wearing-earpiece-using-white-laptop-computer-210647.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 <center><sup>Source: https://www.pexels.com/photo/woman-wearing-earpiece-using-white-laptop-computer-210647/</sup></center>
 
