@@ -21,6 +21,8 @@ AWS Connect is a versatile way of building and managing a completely serverless 
 
 It can be used as a simple way of managing agents and connecting customers with them, or as a way of building complex routing systems that can use multiple customer inputs and diverging paths to route customers to different agent teams.
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/Woman-wearing-earpiece-using-white-laptop-computer-210647.jpg){:class="img-fluid rounded float-right ml-5" :height="auto" width="50%"}
+
 What separates AWS Connect from a traditional call centre is its ability to create and scale call centres within minutes, and enables remote working as it relies on web interfaces rather than a traditional handset. 
 
 AWS Connect provides an all in one service for:
@@ -37,6 +39,9 @@ AWS Connect provides an all in one service for:
 AWS Connect is one of those well designed products that can be downright simple, or incredibly complex, depending on what you design and the components that you use. 
 
 It is designed to be used by anyone, and doesn’t require developer experience to configure, though some knowledge of S3 buckets and data encryption via AWS KMS is beneficial.
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/petr-machacek-BeVGrXEktIk-unsplash.jpg){:class="img-fluid rounded float-right ml-5" :height="auto" width="50%"}
+
 
 Without any prior experience, on my first attempt with AWS Connect I was able to get a full serverless call centre up and running in under 15 minutes, that included:
 
@@ -57,6 +62,8 @@ AWS Connect can be integrated into AWS Lambda and AWS Lex, meaning scripts can b
 - **Speech-to-text translation** - providing agents with a summary of call
 - **Integration with AWS database solutions** - providing queryable stats and metrics of calls
 - **Language detection** - allowing key words and phrases to be identified and flagged during calls to help understand overall customer satisfaction
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/chatbot.jpg){:class="img-fluid rounded float-right ml-5" :height="auto" width="50%"}
 
 AWS Connect is an incredibly versatile and scalable platform that allows companies to build a customised and flexible virtual call centre. Enabling them to adapt to pressures of scale, flexibility, and distribution to overcome the obstacles and rigid structures of a traditional call centre.
  
