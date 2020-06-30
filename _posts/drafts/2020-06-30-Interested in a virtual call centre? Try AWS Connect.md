@@ -13,7 +13,7 @@ One of them, AWS Connect, has proven to be an interesting use case.
 
 With the growing demand to work remotely, it has seen increased usage during the COVID-19 outbreak. It allows companies to create a virtual cloud based call centre, that enables and empowers staff to answer from anywhere they have access to a PC.
 
-## A cloud based call centre?
+### A cloud based call centre?
 
 AWS Connect markets itself as *“an omnichannel cloud contact center”*, but what does that really mean?
 
@@ -36,7 +36,7 @@ AWS Connect provides an all in one service for:
 - Integration with AWS database for automatic logs and stats
   providing a simple user interface for agents to answer calls without needing a physical handset
 
-## Just how simple is it?
+### Just how simple is it?
 
 AWS Connect is one of those well designed products that can be downright simple, or incredibly complex, depending on what you design and the components that you use. 
 
@@ -56,7 +56,7 @@ Without any prior experience, on my first attempt with AWS Connect I was able to
 - A call routing that made use of keypad entry, and queue checking to place customers on hold if no agent was available
 - 3 different user types (admin, managerial, agent) that could log in and receive inbound calls via PC and headset
 
-## Complexity if you want it
+### Complexity if you want it
 
 On the other side, AWS Connect supports a huge range of customisation and supported services. 
 
