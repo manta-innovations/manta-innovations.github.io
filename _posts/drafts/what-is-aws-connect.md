@@ -69,5 +69,5 @@ AWS Connect is an incredibly versatile and scalable platform that allows compani
  
 This is just a high level summary of AWS connect, I’ll be looking to put together a more technical guide in the foreseeable future - so watch this space. 
 
-More for information about AWS and Serverless feel free to check out my other blogs on my website, [Manta Innovations](https://manta-innovations.co.uk/blog). 
+More for information about AWS and Serverless feel free to check out my other [blogs](https://manta-innovations.co.uk/blog). 
 
