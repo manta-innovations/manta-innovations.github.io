@@ -2,7 +2,7 @@
 layout: post
 title: Interested in a virtual call centre? Try AWS connect 
 date: 2020-06-24
-image:
+image: Aws connect logo_Connect-2.jpg
 author: jhole89
 tags: serverless, aws, cloud-native, remote teams, digital workplace
 ---
