@@ -54,15 +54,13 @@ On the other side, AWS Connect supports a huge range of customisation and suppor
 
 AWS Connect can be integrated into AWS Lambda and AWS Lex, meaning scripts can be written that would enable some of the following features:
 
-- Speech-to-text translation - providing agents with a summary of call
-- Integration with AWS database solutions - providing queryable stats and metrics of calls
-- Language detection - allowing key words and phrases to be identified and flagged during calls to help understand overall customer satisfaction
+- **Speech-to-text translation** - providing agents with a summary of call
+- **Integration with AWS database solutions** - providing queryable stats and metrics of calls
+- **Language detection** - allowing key words and phrases to be identified and flagged during calls to help understand overall customer satisfaction
 
 AWS Connect is an incredibly versatile and scalable platform that allows companies to build a customised and flexible virtual call centre. Enabling them to adapt to pressures of scale, flexibility, and distribution to overcome the obstacles and rigid structures of a traditional call centre.
  
 This is just a high level summary of AWS connect, I’ll be looking to put together a more technical guide in the foreseeable future - so watch this space. 
 
 More for information about AWS and Serverless feel free to check out my other blogs on my website, [Manta Innovations](https://manta-innovations.co.uk/blog). 
-
-
 
