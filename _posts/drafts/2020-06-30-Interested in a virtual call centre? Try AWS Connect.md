@@ -63,9 +63,9 @@ On the other side, AWS Connect supports a huge range of customisation and suppor
 
 AWS Connect can be integrated into AWS Lambda and AWS Lex, meaning scripts can be written that would enable some of the following features:
 
-- Speech-to-text translation, providing agents with a summary of call
-- Integration with AWS database solutions, providing queryable stats and metrics of calls
-- Language detection, allowing key words and phrases to be identified and flagged during calls to help understand overall customer satisfaction
+- Speech-to-text translation -providing agents with a summary of call
+- Integration with AWS database solutions - providing queryable stats and metrics of calls
+- Language detection - allowing key words and phrases to be identified and flagged during calls to help understand overall customer satisfaction
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/chatbot.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
