@@ -21,7 +21,9 @@ AWS Connect is a versatile way of building and managing a completely serverless 
 
 It can be used as a simple way of managing agents and connecting customers with them, or as a way of building complex routing systems that can use multiple customer inputs and diverging paths to route customers to different agent teams.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/Woman-wearing-earpiece-using-white-laptop-computer-210647.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+assets/images/blog/aws-connect-overview/Aws connect logo_Connect-2.jpg
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/Aws connect logo_Connect-2.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 <center><sup>Source: https://www.pexels.com/photo/woman-wearing-earpiece-using-white-laptop-computer-210647/</sup></center>
 
@@ -62,9 +64,9 @@ On the other side, AWS Connect supports a huge range of customisation and suppor
 
 AWS Connect can be integrated into AWS Lambda and AWS Lex, meaning scripts can be written that would enable some of the following features:
 
-- **Speech-to-text translation**, providing agents with a summary of call
-- **Integration with AWS database solutions**, providing queryable stats and metrics of calls
-- **Language detection**, allowing key words and phrases to be identified and flagged during calls to help understand overall customer satisfaction
+- Speech-to-text translation, providing agents with a summary of call
+- Integration with AWS database solutions, providing queryable stats and metrics of calls
+- Language detection, allowing key words and phrases to be identified and flagged during calls to help understand overall customer satisfaction
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect-overview/chatbot.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
