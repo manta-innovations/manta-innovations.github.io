@@ -117,6 +117,7 @@ This stage will also provide you with the URL for your agents to login with.
 Routing profiles act as the link between our agents and answer queues.
 
 **Image 11**
+
 **Image 12**
 
 #### 14. Once the routing profile is in place, you can now start creating users and assigning them to the profile.
