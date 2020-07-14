@@ -20,13 +20,12 @@ to create an account [here](https://signin.aws.amazon.com/signin?redirect_uri=ht
 
 1. First you’re going to set up your identity access management. 
 
-If you want to manage your agents within Amazon Connect use the first option *“Store users with Amazon Connect”*, and personalise the URL. 
-If you already have and wish to use Active-Directory, you can use the second two options; to manage users via AWS AD, or non-AWS AD via SAML, respectively. 
+> If you want to manage your agents within Amazon Connect use the first option *“Store users with Amazon Connect”*, and personalise the URL. 
+> If you already have and wish to use Active-Directory, you can use the second two options; to manage users via AWS AD, or non-AWS AD via SAML, respectively. 
 
 This stage will also provide you with the URL for your agents to login with.
 
 **Image 1**
-
 
 2. Next you have the option to create an admin user. 
 
