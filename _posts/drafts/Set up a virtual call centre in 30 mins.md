@@ -100,7 +100,7 @@ This stage will also provide you with the URL for your agents to login with.
    In this way you can use Software Engineering principles of composition and DRY (Don't Repeat Yourself) to create reusable flow elements. 
    As an example, I have created a single end to end flow.
    
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image10_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+ ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image10_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
    Here I've just set up a very simple flow whereby I check those basic settings 
    I've configured (opening hours, staff availability, and queue availability) and try to transfer the customer to an agent. 
@@ -139,7 +139,7 @@ Routing profiles act as the link between our agents and answer queues.
 
    For instance, I switched it from ‘Sample inbound flow’ to ‘Call centre’ which is the name I gave my demo contact flow.
    
- ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image14_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image14_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 16. Once that’s done, you are ready to go. 
 
