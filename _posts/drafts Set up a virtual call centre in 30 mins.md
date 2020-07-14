@@ -87,27 +87,27 @@ This stage will also provide you with the URL for your agents to login with.
 
 #### 11. Next, you will be given the option to create or upload your own prompts, which are audio files you may wish to playback to callers.
 
-    I didn’t want to use any custom audio prompts, so I skipped this stage but feel to check them out, 
-    or add your own and apply them in your contact flow, speaking of which...
+   I didn’t want to use any custom audio prompts, so I skipped this stage but feel to check them out, 
+   or add your own and apply them in your contact flow, speaking of which...
 
 #### 12. The next stage is the biggest and most complex bit - contact flows.
 
-    This is how you design the flow that a customer may take, and that can be a complete end to end flow, or a small flow which can be composed into a larger flow. 
+   This is how you design the flow that a customer may take, and that can be a complete end to end flow, or a small flow which can be composed into a larger flow. 
 
-    In this way you can use Software Engineering principles of composition and DRY (Don't Repeat Yourself) to create reusable flow elements. 
-    As an example, I have created a single end to end flow.
+   In this way you can use Software Engineering principles of composition and DRY (Don't Repeat Yourself) to create reusable flow elements. 
+   As an example, I have created a single end to end flow.
 
 **Image 10**
 
-    Here I've just set up a very simple flow whereby I check those basic settings 
-    I've configured (opening hours, staff availability, and queue availability) and try to transfer the customer to an agent. 
+   Here I've just set up a very simple flow whereby I check those basic settings 
+   I've configured (opening hours, staff availability, and queue availability) and try to transfer the customer to an agent. 
 
-    If any of these fail, the system responds to the customer letting them know why (e.g. outside of opening hours) prior to terminating the call. 
-    If they can't be immediately transferred due to the queue being at capacity, I've implemented a loop to wait 5 minutes and try again.
+   If any of these fail, the system responds to the customer letting them know why (e.g. outside of opening hours) prior to terminating the call. 
+   If they can't be immediately transferred due to the queue being at capacity, I've implemented a loop to wait 5 minutes and try again.
 
-    In this way I've been able to set up a very simple complete end to end flow for a call center, using a simple drag and drop UI. 
-    Flows can become a lot more complex, and I could have used things such as keypad entry, Lex skills, and even trigger an AWS Lambda 
-    (which in turn can be used to trigger many other AWS services via an SDK call).
+   In this way I've been able to set up a very simple complete end to end flow for a call center, using a simple drag and drop UI. 
+   Flows can become a lot more complex, and I could have used things such as keypad entry, Lex skills, and even trigger an AWS Lambda 
+   (which in turn can be used to trigger many other AWS services via an SDK call).
 
 #### 13. Following this, you will need to set up a routing profile. 
 
@@ -120,31 +120,31 @@ Routing profiles act as the link between our agents and answer queues.
 
 **Image 13**
 
-    When creating an agent/user you need to assign them both a routing profile (which we just spoke about above) and a security profile. 
-    Security profiles dictate the access control the agent has within AWS Connect, and can be selected from default options of *Admin, 
-    Agent, CallCenterManager, or QualityAnalyst*.
+   When creating an agent/user you need to assign them both a routing profile (which we just spoke about above) and a security profile. 
+   Security profiles dictate the access control the agent has within AWS Connect, and can be selected from default options of *Admin, 
+   Agent, CallCenterManager, or QualityAnalyst*.
 
-    Alternatively you can create our own Security Profiles and assign agents to them.
+   Alternatively you can create our own Security Profiles and assign agents to them.
 
 #### 15. The last thing you need to do is to switch your inbound number onto the correct contact flow. 
 
-    The reason to do this last is to ensure that everything related to that contact flow is set up and agents are available before making the flow live. 
-    If you switched the number onto the flow at the start, but hadn’t yet created agents to answer, or the correct operational hours, 
-    then clients may start calling in and receiving unexpected responses or be left waiting for an agent.
+   The reason to do this last is to ensure that everything related to that contact flow is set up and agents are available before making the flow live. 
+   If you switched the number onto the flow at the start, but hadn’t yet created agents to answer, or the correct operational hours, 
+   then clients may start calling in and receiving unexpected responses or be left waiting for an agent.
 
-    We do this simply by going back to the phone number management screen and attaching it to our new contact flow.
+   We do this simply by going back to the phone number management screen and attaching it to our new contact flow.
 
-    For instance, I switched it from ‘Sample inbound flow’ to ‘Call centre’ which is the name I gave my demo contact flow.
+   For instance, I switched it from ‘Sample inbound flow’ to ‘Call centre’ which is the name I gave my demo contact flow.
 
 **Image 14**
 **Image 15**
 
 #### 16. Once that’s done, you are ready to go. 
 
-    You have successfully set up a virtual call centre in (hopefully) under 30 minutes. Clients can now dial in, 
-    and after making their way through our contact flow they’ll be passed to an available agent.
+   You have successfully set up a virtual call centre in (hopefully) under 30 minutes. Clients can now dial in, 
+   and after making their way through our contact flow they’ll be passed to an available agent.
 
-    You’ll be able to log onto your virtual call centre by clicking the phone logo in the top right.
+   You’ll be able to log onto your virtual call centre by clicking the phone logo in the top right.
 
 **image 16**
 **image 17**
