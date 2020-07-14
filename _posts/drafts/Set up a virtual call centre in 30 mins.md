@@ -67,7 +67,7 @@ This stage will also provide you with the URL for your agents to login with.
    It advises you to dial the number, however from my experience with Amazon Connect all configuration changes can take up to 15 minutes to be pushed out. 
    If you were to call at this stage you might not get through, but that doesn’t stop you continuing the setup.
    
-![post-thumb]({{site.baseurl}}/assets/images/blog/blog/aws-connect/Image 7_claim_number_2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 7_claim_number_2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 9. Next you can set the hours of operation; which is when you expect agents to be able to take calls.
 
