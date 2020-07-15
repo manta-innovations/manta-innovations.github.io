@@ -48,7 +48,7 @@ This stage will also provide you with the URL for your agents to login with.
 #### 5. Now that you have done the initial setup you will be presented with a summary screen.  Check through the options and if everything looks good, create the instance.
 
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 4_connect_review.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image-4_connect_review.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 6. Once your Amazon Connect instance has been created,  you can log into the dashboard and customise your virtual call centre. 
 
