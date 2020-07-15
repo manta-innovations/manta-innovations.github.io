@@ -116,9 +116,9 @@ This stage will also provide you with the URL for your agents to login with.
 
 Routing profiles act as the link between our agents and answer queues.
 
-**Image 11**
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/routing_profile_1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
-**Image 12**
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/routing_profile_2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 14. Once the routing profile is in place, you can now start creating users and assigning them to the profile.
 
