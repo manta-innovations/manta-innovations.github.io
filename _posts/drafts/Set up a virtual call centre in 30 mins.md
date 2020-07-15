@@ -25,7 +25,7 @@ If you already have and wish to use Active-Directory, you can use the second two
 
 This stage will also provide you with the URL for your agents to login with.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 1_Setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_1_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 2. Next you have the option to create an admin user. 
 
@@ -36,14 +36,14 @@ This stage will also provide you with the URL for your agents to login with.
 
    I’ve selected both options here as I want to receive and make calls.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 2_connect_telephony.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_2_connect_telephony.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 4. The last step of the initial set up is  to configure your data storage; which will contain call and chat logs.
 
    By default Amazon Connect generates its own S3 buckets and KMS keys to use for secure data encryption, 
    but you can set this to use pre-existing buckets and keys should you wish to.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 3_setting up virtual call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_3_setting_up_virtual_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 5. Now that you have done the initial setup you will be presented with a summary screen.  Check through the options and if everything looks good, create the instance.
 
@@ -52,7 +52,7 @@ This stage will also provide you with the URL for your agents to login with.
 
 #### 6. Once your Amazon Connect instance has been created,  you can log into the dashboard and customise your virtual call centre. 
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 5_connect_success.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_5_connect_success.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 7. The first thing you need to do is claim a phone number to receive calls on. 
 
@@ -60,7 +60,7 @@ This stage will also provide you with the URL for your agents to login with.
 
    I'm currently in Canada, so I chose a North American number, and opted for ‘Toll free’.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 6_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_6_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 8. Next you will be presented with a screen advising you to claim the number. 
 
@@ -75,7 +75,7 @@ This stage will also provide you with the URL for your agents to login with.
    I set all of my operational hours in Pacific Standard Time, and extended the hours into the evening a little. 
    If your call centre isn’t operational at the weekend, you can remove these from the operational hours.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 8_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_8_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 10. Following this, the next thing you need to do is set up queues. 
 
@@ -86,7 +86,7 @@ This stage will also provide you with the URL for your agents to login with.
 
    If your call centre requires more than one workflow, add additional queues with the *“add new queue”* button. I created an additional queue called *“VanQueue”*.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 9_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_9_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 11. Next, you will be given the option to create or upload your own prompts, which are audio files you may wish to playback to callers.
 
@@ -100,7 +100,7 @@ This stage will also provide you with the URL for your agents to login with.
    In this way you can use Software Engineering principles of composition and DRY (Don't Repeat Yourself) to create reusable flow elements. 
    As an example, I have created a single end to end flow.
    
- ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 10_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+ ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_10_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
    Here I've just set up a very simple flow whereby I check those basic settings 
    I've configured (opening hours, staff availability, and queue availability) and try to transfer the customer to an agent. 
@@ -117,11 +117,12 @@ This stage will also provide you with the URL for your agents to login with.
 Routing profiles act as the link between our agents and answer queues.
 
 **Image 11**
+
 **Image 12**
 
 #### 14. Once the routing profile is in place, you can now start creating users and assigning them to the profile.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image13_add_user.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_13_add_user.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
    When creating an agent/user you need to assign them both a routing profile (which we just spoke about above) and a security profile. 
    Security profiles dictate the access control the agent has within AWS Connect, and can be selected from default options of *Admin, 
@@ -139,7 +140,7 @@ Routing profiles act as the link between our agents and answer queues.
 
    For instance, I switched it from ‘Sample inbound flow’ to ‘Call centre’ which is the name I gave my demo contact flow.
    
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image 14_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_14_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 16. Once that’s done, you are ready to go. 
 
@@ -148,8 +149,9 @@ Routing profiles act as the link between our agents and answer queues.
 
    You’ll be able to log onto your virtual call centre by clicking the phone logo in the top right.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image17_useR_loging.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/Image17_setting up call centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_17_user_loging.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_18_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 This was just a simple quick walkthrough of setting up Amazon Connect.
 
