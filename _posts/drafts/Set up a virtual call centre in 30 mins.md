@@ -2,7 +2,7 @@
 layout: post
 title: Set up a virtual call centre in 30 minutes
 date: 2020-07-14
-image: 
+image: aws-connect/image_10_setting_up_call_centre.png
 author: jhole89
 tags: serverless, aws, cloud-native, remote teams, digital workplace
 ---
