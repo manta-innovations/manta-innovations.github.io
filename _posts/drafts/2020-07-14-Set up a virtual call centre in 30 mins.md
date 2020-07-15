@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set up a virtual call centre in 30 minutes
+title: Set up a virtual call centre in 30 minutes with Amazon Connect
 date: 2020-07-14
 image: aws-connect/image_10_setting_up_call_centre.png
 author: jhole89
@@ -30,7 +30,7 @@ This stage will also provide you with the URL for your agents to login with.
 #### 2. Next you have the option to create an admin user. 
 
    I suggest skipping this step for this walkthrough as you can use your IAM user instead, 
-   however you can take this chance to add other administrators here if you wish too.
+   however you can use this opportunity to add other administrators here if you wish.
 
 #### 3. Next you’'ll configure the telephony options for both inbound and outbound calls. 
 
@@ -48,7 +48,7 @@ This stage will also provide you with the URL for your agents to login with.
 #### 5. Now that you have done the initial setup you will be presented with a summary screen.  Check through the options and if everything looks good, create the instance.
 
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image-4_connect_review.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_4_connect_review.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 6. Once your Amazon Connect instance has been created,  you can log into the dashboard and customise your virtual call centre. 
 
@@ -122,13 +122,13 @@ Routing profiles act as the link between our agents and answer queues.
 
 #### 14. Once the routing profile is in place, you can now start creating users and assigning them to the profile.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_13_add_user.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
-
    When creating an agent/user you need to assign them both a routing profile (which we just spoke about above) and a security profile. 
    Security profiles dictate the access control the agent has within AWS Connect, and can be selected from default options of *Admin, 
    Agent, CallCenterManager, or QualityAnalyst*.
 
    Alternatively you can create our own Security Profiles and assign agents to them.
+   
+   ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_13_add_user.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 #### 15. The last thing you need to do is to switch your inbound number onto the correct contact flow. 
 
@@ -138,7 +138,7 @@ Routing profiles act as the link between our agents and answer queues.
 
    We do this simply by going back to the phone number management screen and attaching it to our new contact flow.
 
-   For instance, I switched it from ‘Sample inbound flow’ to ‘Call centre’ which is the name I gave my demo contact flow.
+   For instance, I switched it from ‘Sample inbound flow’ to ‘Demo’ which is the name I gave my demo contact flow.
    
 ![post-thumb]({{site.baseurl}}/assets/images/blog/aws-connect/image_14_setting_up_call_centre.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
