@@ -15,7 +15,7 @@ machine learning, web apps, IoT, or networking, because you’ll likely need to 
 
 In no particular orderhe, here are my top 10: 
 
-# EC2
+## EC2
 **What is it?**
 
 Scalable servers in the cloud.
@@ -32,7 +32,7 @@ you want, even a minecraft server. Additionally you can launch preconfigured sna
 
 On top of that, EC2 forms a huge part of many of the AWS Certification exams...so learn EC2.
 
-# ECS
+## ECS
 
 **What is it?**
 
@@ -52,7 +52,7 @@ financially this means you only pay for the compute you require, rather than pay
 
 For application developers, knowing ECS is a must. Personally, ECS is my go to for custom applications. 
 
-# RDS
+## RDS
 
 **What is it?**
 
@@ -69,7 +69,7 @@ RDS takes away the pain of managing a relational DB yourself (along with the ove
 engines including Oracle, MSSQL, MariaDB, MySQL, and of course the only real choice PostgreSQL. Having been around for a long time, RDS is another service that 
 makes an appearance in AWS certifications, so make sure you spend some time understanding topics such as read-replicas and backing up from snapshots.
 
-# DynamoDB
+## DynamoDB
 
 **What is it?**
 
@@ -89,7 +89,7 @@ DynamoDB is schema-less, fast, resilient, and a great fit for any use case that 
 for AWS. As with some of the others, it's been around a long time and frequently pops up on many AWS certifications, though not to the same degree as 
 RDS due to the decreased complexity.
 
-# S3 
+## S3 
 
 **What is it?**
 
@@ -110,7 +110,7 @@ frequently you need to access your data.
 
 With all of this it's no surprise that S3 also comes up frequently across all AWS certifications...learn S3, because you’ll definitely be using it.
 
-# VPC
+## VPC
 
 **What is it?**
 
@@ -127,7 +127,7 @@ VPC is an essential requirement for many AWS resources and includes everything f
 
 Due to its complexity it forms a large part of many AWS certifications and it is a must know for anyone wishing to deploy to AWS.
 
-# Lambda
+## Lambda
 
 **What is it?**
 
@@ -148,7 +148,7 @@ at 10am? Use Lambda.
 
 Lambda is your go to for event driven processing and script execution.
 
-# KMS
+## KMS
 
 **What is it?**
 
@@ -165,7 +165,7 @@ Storing data on S3? Use a KMS key to encrypt it. Storing a confidential key in S
 
 Using KMS is crucial for building secure AWS native solutions.
 
-# CloudWatch
+## CloudWatch
 
 **What is it?**
 
@@ -185,7 +185,7 @@ processing, and scheduling lambda events.
 
 So whether you’re deploying a service to AWS or scheduling event driven architecture, CloudWatch is crucial.
 
-# AWS IAM
+## AWS IAM
 
 **What is it?**
 
@@ -202,7 +202,7 @@ service is using. Learning IAM permissions is invaluable for application develop
 
 IAM is also another service that comes up frequently in AWS certifications so it’s worth familiarising yourself with the most common ones.
 
-# Let me know your thoughts
+### Let me know your thoughts
 
 Thanks for taking the time to read this guide - I hope it helps! As mentioned these are my own personal views, and the applications 
 are not ranked in any particular order. 
