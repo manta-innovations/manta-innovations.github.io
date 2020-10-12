@@ -75,7 +75,7 @@ makes an appearance in AWS certifications, so make sure you spend some time unde
 
 Managed key-value and document database
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-dynamo-db.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-dynamo-db.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
