@@ -171,7 +171,7 @@ Using KMS is crucial for building secure AWS native solutions.
 
 Logs, monitoring, and insights for resources
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/CloudWatch AWS.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="20%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/CloudWatchAWS.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="20%"}
 
 **Why is it important?**
 
@@ -191,7 +191,7 @@ So whether you’re deploying a service to AWS or scheduling event driven archit
 
 User and permissions management
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/iam-1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/iam-1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="30%"}
 
 **Why is it important?**
 
