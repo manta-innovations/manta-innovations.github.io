@@ -20,7 +20,7 @@ In no particular orderhe, here are my top 10:
 
 Scalable servers in the cloud.
 
-![post-thumb]({{site.baseurl}}/assets/imageS/blog/aws-top-10/EC2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/imageS/blog/aws-top-10/EC2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -38,7 +38,7 @@ On top of that, EC2 forms a huge part of many of the AWS Certification exams...s
 
 Scalable serverless container orchestration.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/AWS%20ECS_scaled.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/AWS%20ECS_scaled.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -58,7 +58,7 @@ For application developers, knowing ECS is a must. Personally, ECS is my go to f
 
 Managed Relational Databases
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/RDS%20aws.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/RDS%20aws.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -95,7 +95,7 @@ RDS due to the decreased complexity.
 
 Simple scalable resilient object storage
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-s3.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-s3.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -116,7 +116,7 @@ With all of this it's no surprise that S3 also comes up frequently across all AW
 
 Isolated virtual network for AWS resources
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-vpc.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-vpc.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -133,7 +133,7 @@ Due to its complexity it forms a large part of many AWS certifications and it is
 
 Run code without needing servers
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Lamba.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Lamba.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -154,7 +154,7 @@ Lambda is your go to for event driven processing and script execution.
 
 Secure data encryption and key management
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/6_aws-kms.5d90490140.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/6_aws-kms.5d90490140.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -171,7 +171,7 @@ Using KMS is crucial for building secure AWS native solutions.
 
 Logs, monitoring, and insights for resources
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Cloudwatch_aws.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Cloudwatch_aws.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
@@ -191,7 +191,7 @@ So whether you’re deploying a service to AWS or scheduling event driven archit
 
 User and permissions management
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/iam-1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/iam-1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
