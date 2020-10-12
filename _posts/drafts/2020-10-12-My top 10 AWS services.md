@@ -20,7 +20,7 @@ In no particular orderhe, here are my top 10:
 
 Scalable servers in the cloud.
 
-![post-thumb]({{site.baseurl}}/assets/imageS/blog/aws-top-10/EC2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/EC2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="40%"}
 
 **Why is it important?**
 
