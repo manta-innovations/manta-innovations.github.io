@@ -2,7 +2,7 @@
 layout: post
 title: My top 10 AWS services
 date: 2020-10-12
-image: 
+image: aws-top-10/AWS%20services.png
 author: jhole89
 tags: serverless, aws, cloud-native, aws services
 ---
@@ -20,6 +20,8 @@ In no particular orderhe, here are my top 10:
 
 Scalable servers in the cloud.
 
+![post-thumb]({{site.baseurl}}/assets/imageS/blog/aws-top-10/EC2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 **Why is it important?**
 
 Ok, let’s get the big one done first. 
@@ -35,6 +37,8 @@ On top of that, EC2 forms a huge part of many of the AWS Certification exams...s
 **What is it?**
 
 Scalable serverless container orchestration.
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/AWS%20ECS_scaled.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 **Why is it important?**
 
@@ -54,6 +58,8 @@ For application developers, knowing ECS is a must. Personally, ECS is my go to f
 
 Managed Relational Databases
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/RDS%20aws.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 **Why is it important?**
 
 Whether you prefer SQL or NoSQL, the reality is that SQL databases are a massive industry themselves. Many complex applications will require a relational 
@@ -68,6 +74,8 @@ makes an appearance in AWS certifications, so make sure you spend some time unde
 **What is it?**
 
 Managed key-value and document database
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-dynamo-db.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 **Why is it important?**
 
@@ -86,6 +94,8 @@ RDS due to the decreased complexity.
 **What is it?**
 
 Simple scalable resilient object storage
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-s3.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 **Why is it important?**
 
@@ -106,6 +116,8 @@ With all of this it's no surprise that S3 also comes up frequently across all AW
 
 Isolated virtual network for AWS resources
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/amazon-vpc.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 **Why is it important?**
 
 VPC lets you provision a logically isolated section of the AWS Cloud which you can launch AWS resources in. 
@@ -120,6 +132,8 @@ Due to its complexity it forms a large part of many AWS certifications and it is
 **What is it?**
 
 Run code without needing servers
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Lamba.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 **Why is it important?**
 
@@ -140,7 +154,10 @@ Lambda is your go to for event driven processing and script execution.
 
 Secure data encryption and key management
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/6_aws-kms.5d90490140.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 **Why is it important?**
+
 Security is important, even more so on the cloud, where an incorrect setting can expose your resource to the rest of the world. 
 KMS secures data and secrets in the cloud. 
 
@@ -153,6 +170,8 @@ Using KMS is crucial for building secure AWS native solutions.
 **What is it?**
 
 Logs, monitoring, and insights for resources
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Cloudwatch_aws.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 **Why is it important?**
 
@@ -172,7 +191,10 @@ So whether you’re deploying a service to AWS or scheduling event driven archit
 
 User and permissions management
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/iam-1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 **Why is it important?**
+
 Before you even start deploying a service to AWS you need to be thinking about IAM. IAM is how we assign privileges to both users and roles. 
 
 So if you’re designing a service that requires access to a private S3 bucket, you’ll need to use IAM to assign s3 read access to the role your 
@@ -180,7 +202,7 @@ service is using. Learning IAM permissions is invaluable for application develop
 
 IAM is also another service that comes up frequently in AWS certifications so it’s worth familiarising yourself with the most common ones.
 
-# Summary
+# Let me know your thoughts
 
 Thanks for taking the time to read this guide - I hope it helps! As mentioned these are my own personal views, and the applications 
 are not ranked in any particular order. 
