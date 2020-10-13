@@ -133,7 +133,7 @@ Due to its complexity it forms a large part of many AWS certifications and it is
 
 Run code without needing servers
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Lamba.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="20%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/Lamba.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="30%"}
 
 **Why is it important?**
 
