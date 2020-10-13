@@ -16,11 +16,14 @@ machine learning, web apps, IoT, or networking, because you’ll likely need to 
 In no particular orderhe, here are my top 10: 
 
 ### EC2
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/EC2.png){:class="img-fluid rounded float-right mb-5" :height="auto" width="20%"}
+
 **What is it?**
 
 Scalable servers in the cloud.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/EC2.png){:class="img-fluid rounded float-right mb-2" :height="auto" width="20%"}
+
 
 **Why is it important?**
 
