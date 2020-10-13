@@ -17,7 +17,7 @@ In no particular orderhe, here are my top 10:
 
 ### EC2
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/EC2.png){:class="img-fluid rounded float-right ml-5" :height="auto" width="20%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/EC2.png){:class="img-fluid rounded float-right ml-10" :height="auto" width="20%"}
 
 **What is it?**
 
