@@ -37,11 +37,11 @@ On top of that, EC2 forms a huge part of many of the AWS Certification exams...s
 
 ### ECS
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/AWS%20ECS_scaled.png){:class="img-fluid rounded float-left mb-2" :height="auto" width="20%"}
+
 **What is it?**
 
 Scalable serverless container orchestration.
-
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/AWS%20ECS_scaled.png){:class="img-fluid rounded float-left mb-2" :height="auto" width="20%"}
 
 **Why is it important?**
 
