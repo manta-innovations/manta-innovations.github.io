@@ -171,7 +171,7 @@ Using KMS is crucial for building secure AWS native solutions.
 
 Logs, monitoring, and insights for resources
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/png-clipart-amazon-web-services-amazon-cloudwatch-amazon-com-amazon-elastic-compute-cloud-aws-lambda-bigmidin-angle-service.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="20%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/aws-top-10/CloudwatchAWS.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="20%"}
 
 **Why is it important?**
 
