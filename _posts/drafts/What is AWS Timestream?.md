@@ -70,12 +70,12 @@ NoSQL data models. Timestream is considered a schema-less database as there is n
 
 However it still uses concepts such as databases and tables, along with Timestream specific concepts, so lets define these:
 
-**Database**: a collection of tables;
-**Table**: an encrypted container that holds our time series records;
-**Record**: a combination of a timestamp, 1 or more dimensions, and a single measure;
-**Dimensions**: attributes that describe metadata of record (e.g. region, AZ, vpc, hostname for DevOps metric data) - always stored as varchar;
-**Measure**: the single named data value representing the measurement (e.g. cpu usage, memory allocation for DevOps metric data)- can be boolean, 
-bigint, varchar, or double;
+- **Database**: a collection of tables;
+- **Table**: an encrypted container that holds our time series records;
+- **Record**: a combination of a timestamp, 1 or more dimensions, and a single measure;
+- **Dimensions**: attributes that describe metadata of record (e.g. region, AZ, vpc, hostname for DevOps metric data) - always stored as varchar;
+- **Measure**: the single named data value representing the measurement (e.g. cpu usage, memory allocation for DevOps metric data)- can be boolean, 
+  bigint, varchar, or double;
 
 The Timestream UI presents this model in a familiar column wise structure, however due to the data model it doesn’t support the standard 
 CRUD operations you might expect. While records can be created and read back, they cannot be updated or deleted. Instead records can only 
