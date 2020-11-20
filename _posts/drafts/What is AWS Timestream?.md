@@ -2,7 +2,7 @@
 layout: post
 title: What is AWS Timestream?
 date: 2020-11-20
-image: 
+image: timestream/cover.jpg
 author: jhole89
 tags: startups, culture
 ---
@@ -32,7 +32,7 @@ As a completely serverless offering, there is little to configure and no sizing 
 it follows a rolling release schedule, meaning you are able to take advantage of new features as they become available, rather than worry about version 
 upgrades. Additionally, in line with other AWS managed solutions you simply pay for usage rather than the underlying infrastructure.
 
-Picture 
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/Timestream - database configuration.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 One of the few settings you specify is the encryption key. Timestream enforces data encryption and thankfully this setting cannot be turned off. 
 Your options here allow you to specify how your data is encrypted (both at rest and in flight) using a CMK stored in AWS KMS.
@@ -46,7 +46,7 @@ Timestream currently has 2 types of storage:
 1. A write optimized memory store; where data initially lands and is automatically deduplicated - I’ll talk about this more in a second.
 2. A read optimized magnetic store; for cost effective long term storage.
 
-Picture
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/Timestream - storage types.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 When setting up a Timestream table you’re required to set a retention policy to specify how long data should exist in each store before moving 
 onto the next (from memory, to magnetic, to deletion), with the minimum values being 1hr for the memory store (up to a maximum 1 year) and 1 
@@ -77,6 +77,10 @@ However it still uses concepts such as databases and tables, along with Timestre
 - **Measure**: the single named data value representing the measurement (e.g. cpu usage, memory allocation for DevOps metric data)- can be boolean, 
   bigint, varchar, or double;
 
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/Timestream - table Dimensions.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/Timestream - table measures.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
 The Timestream UI presents this model in a familiar column wise structure, however due to the data model it doesn’t support the standard 
 CRUD operations you might expect. While records can be created and read back, they cannot be updated or deleted. Instead records can only 
 be removed when they reach the retention limit on the magnetic storage.
@@ -84,11 +88,17 @@ be removed when they reach the retention limit on the magnetic storage.
 ## Schema-less SQL on steroids
 
 Despite Timestream being a schema-less NoSQL database, as mentioned it does present its data model as a column wise structure which anyone 
-familiar with SQL will feel at home with. Timestream enables data to be queried using standard SQL (supporting CTE’s, filtering, and aggregations), 
+familiar with SQL will feel at home with. 
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/Timestream - SQL QUERY.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+
+Timestream enables data to be queried using standard SQL (supporting CTE’s, filtering, and aggregations), 
 with over 250 scalar and aggregate functions and additional time series interpolation for data points that may be missing or lost in transmission. 
 This means you can easily group data into different chunks of time and perform aggregates, even if certain points in time were missing data. 
 The one limitation here is that while Timestream does support table joins, these can only be on the same table (a join back to itself), though this 
 does make sense when you remember that tables are schema-less.
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/Timestream - SQL query results.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 ## Integrations
 Whilst having a handy SQL interface is great, for many this is not the best way to present data to users and stakeholders, 
@@ -99,6 +109,8 @@ These include:
 - Dashboards and charts via Amazon QuickSight or Grafana
 - Data ingestion AWS SDK and CLI, from AWS IoT via IoT rules, from Kinesis Data Analytics streams, or from Telegraf
 - Connecting traditional SQL workbench tools over JDBC
+
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/Timestream - Quicksights.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 ## Closing thoughts
 
