@@ -12,7 +12,7 @@ experience both the community and businesses have been clamoring for.
 
 Recently I spent an afternoon testing out Timestream and I thought I’d share what I learned during that time, and my initial impressions.
 
-##What is a time series database? 
+## What is a time series database? 
 
 A time series database is a system optimized for storing and serving time series data. A time series being a sequence of records represented 
 as data points over an interval. While time series data can be stored in a traditional relational database, these often experience scaling issues. 
