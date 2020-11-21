@@ -90,7 +90,7 @@ be removed when they reach the retention limit on the magnetic storage.
 Despite Timestream being a schema-less NoSQL database, as mentioned it does present its data model as a column wise structure which anyone 
 familiar with SQL will feel at home with. 
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/SQL_Query.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/SQL_query.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 Timestream enables data to be queried using standard SQL (supporting CTE’s, filtering, and aggregations), 
 with over 250 scalar and aggregate functions and additional time series interpolation for data points that may be missing or lost in transmission. 
