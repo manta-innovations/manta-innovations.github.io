@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is AWS Timestream?
+title: A Deep Dive into Amazon Timestream
 date: 2020-11-20
 image: timestream/cover.jpg
 author: jhole89
@@ -10,7 +10,7 @@ tags: startups, culture
 Amazon Timestream is AWS’s newest addition to their storage offerings. It’s a fast, scalable, and serverless time series database; something in my 
 experience both the community and businesses have been clamoring for.
 
-Recently I spent an afternoon testing out Timestream and I thought I’d share what I learned during that time, and my initial impressions.
+Recently I spent an afternoon testing out Timestream, and I thought I’d share what I learned during that time, and my initial impressions.
 
 ### What is a time series database? 
 
@@ -93,7 +93,7 @@ familiar with SQL will feel at home with.
 ![post-thumb]({{site.baseurl}}/assets/images/blog/timestream/SQL_query.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 Timestream enables data to be queried using standard SQL (supporting CTE’s, filtering, and aggregations), 
-with over 250 scalar and aggregate functions and additional time series interpolation for data points that may be missing or lost in transmission. 
+with numerous scalar and aggregate functions and additional time series interpolation for data points that may be missing or lost in transmission. 
 This means you can easily group data into different chunks of time and perform aggregates, even if certain points in time were missing data. 
 The one limitation here is that while Timestream does support table joins, these can only be on the same table (a join back to itself), though this 
 does make sense when you remember that tables are schema-less.
