@@ -133,7 +133,7 @@ services:
     name: Cloud Architecture,
     icon: ti-cloud,
     description: "New to the cloud and migrating from on-prem? Need stable and scalable foundations to iterate apps on?",
-    link: '/contact',
+    link: '/cloud-architecture',
     link-text: "Kickstart your cloud journey with us",
     active: # Add true to select section
   }
