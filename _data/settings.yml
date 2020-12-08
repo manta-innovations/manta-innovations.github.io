@@ -141,7 +141,7 @@ services:
   name: DevOps,
   icon: ti-infinite,
   description: "Want to iterate fast and deploy with zero downtime? Struggling with Kubernetes and automation?",
-  link: '/contact',
+  link: '/devops',
   link-text: "Let us automate away your problems",
   active: true # Add true to select section
   }
