@@ -149,7 +149,7 @@ services:
   name: Quality Assurance,
   icon: ti-check-box,
   description: "Need code appraisal or an architectural review? Want to ensure your software is sustainably built?",
-  link: '/contact',
+  link: '/quality',
   link-text: "Get a professional assessment",
   active: # Add true to select section
   }
