@@ -125,7 +125,7 @@ services:
     name: Machine Learning,
     icon: ti-panel,
     description: "Want to leverage your data to understand, classify, predict, or simulate future events?",
-    link: '/contact',
+    link: '/machine-learning',
     link-text: "Let us see what we can find",
     active: true # Add true to select section
   }
