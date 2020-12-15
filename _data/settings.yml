@@ -157,7 +157,7 @@ services:
   name: Upskill,
   icon: ti-blackboard,
   description: "Need to ensure teams know the latest tools, techniques, and best practice for big data and the cloud?",
-  link: '/contact',
+  link: '/upskill',
   link-text: "Talk to us about our series of talks",
   active: true # Add true to select section
   }
