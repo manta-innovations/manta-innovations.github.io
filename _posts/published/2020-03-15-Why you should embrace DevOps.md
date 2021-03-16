@@ -153,7 +153,7 @@ By embracing *Monitoring* they could have:
 storage and taking Whale offline.
 
 By embracing both *Release Management* and *Continuous Delivery* they could have:
-Eased the release and roll out of the different layers in isolation; avoiding the lengthy rewrite to separate the backend and frontend layers, 
+- Eased the release and roll out of the different layers in isolation; avoiding the lengthy rewrite to separate the backend and frontend layers, 
 and enabling each layer to be developed at its own cadence.
 
 All of these problems could have been avoided if they had merely considered the wider picture outside of their own application code, and embracing 
