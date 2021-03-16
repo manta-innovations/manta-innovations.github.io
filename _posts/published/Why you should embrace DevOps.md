@@ -15,8 +15,7 @@ Over the last decade, DevOps has gone from strength to strength and proven itsel
 many success stories. However despite this, in my experience as a software and cloud consultant, it's still frequently 
 overlooked and ignored in favour of application development.
 
-xx Image 1 
-![post-thumb]({{site.baseurl}}/assets/images/blog/xx){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/Devops2.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 I'm not talking about Waterfall architecture here, but rather some of the fundamental technical DevOps principles of:
 - Continuous Integration: establishing tools and process for continuously merging code back to a single code repository 
@@ -52,7 +51,7 @@ The 3 tiers representing;
 
 The UI talks to the backend which in turn securely accesses the database.
 
-xx Image 2  ![post-thumb]({{site.baseurl}}/assets/images/Devops 2 - DevOPS.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/Devops image 1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 During development of the frontend, we need to communicate with the backend, and likewise for the backend to database. 
 The team decides to stand up a shared piece of infrastructure (a single EC2 instance) to run all three layers, which QA can also access to view features.
@@ -70,7 +69,7 @@ As the champagne pours they start getting emails from customers about bugs in th
 but things that could have easily been discovered if they'd invested in **continuous testing**, and it's enough that requires a new version of 
 Whale to be deployed. Except now they've got customers on the live system, and deploying a new version means taking the old one offline while they switch over.
 
-![post-thumb]({{site.baseurl}}/assets/images/DevOps 5 - scott-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/DevOps5-scott-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 They're left with a couple options:
 1. Deploy anyway and annoy customers
@@ -101,7 +100,7 @@ Then it happens.
 Everything just slows down and stops. No alarms, no errors, just nothing. Customers are once again adrift, and causing one hell of a Twitter storm. 
 What happened? There were no recent code changes.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS 4 - This is fine.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 It turns out that they gained more users than the single EC2 instance could handle. As more users joined and started using Whale, the backend started dumping 
 logs at an increased rate filling up the EC2's file system storage, taking both it and the frontend offline. Something that could have been easily avoided if 
@@ -123,7 +122,7 @@ need to set up and configure:
 To make matters worse they're still running on a single environment - so either they'd have to make all of these changes on their "production" environment, 
 or spin up a separate isolated development environment, which to ensure both environments are identical. They'd really have to invest in **Infrastructure as Code**.
 
-xx Image 5 - ![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS 4 - This is fine.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS4.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 This is a HUGE amount of technical debt for a small team which could easily stop any future development or bug fixes for 6 months or more - something that could easily sink 
 the project, team, and potentially the company.
@@ -133,7 +132,7 @@ the project, team, and potentially the company.
 Now, as I said, this isn't about Waterfall design, but more about involving DevOps principles from the start. By applying DevOps principles from the 
 beginning they could have avoided some of these situations.
 
-xx Image 6 - ![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS 4 - This is fine.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/Devops_Benefits.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 By embracing **Continuous Integration** they could have:
 - Ensured that any code integrated back to their main branch be fully tested prior to deployment; avoiding small bugs interfering with the customer experience.
@@ -178,5 +177,5 @@ later date, your product could already be dead in the water.
 Do you have any experiences of where DevOps was applied a little too late? If you are interested in learning more about DevOps, 
 please check out my other blogs on my website, [Manta Innovations](https://manta-innovations.co.uk/blog) and reach out to me on Twitter at [Joel Lutman](https://twitter.com/JoelLutman).
 
-xx Image 7 - ![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS 4 - This is fine.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/Community Builders social 1024px ALT.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
