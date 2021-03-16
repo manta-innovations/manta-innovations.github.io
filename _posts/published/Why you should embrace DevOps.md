@@ -177,5 +177,5 @@ later date, your product could already be dead in the water.
 Do you have any experiences of where DevOps was applied a little too late? If you are interested in learning more about DevOps, 
 please check out my other blogs on my website, [Manta Innovations](https://manta-innovations.co.uk/blog) and reach out to me on Twitter at [Joel Lutman](https://twitter.com/JoelLutman).
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/Community Builders social 1024px ALT.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/AWS_community_builders.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
