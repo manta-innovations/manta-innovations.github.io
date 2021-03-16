@@ -122,7 +122,7 @@ need to set up and configure:
 To make matters worse they're still running on a single environment - so either they'd have to make all of these changes on their "production" environment, 
 or spin up a separate isolated development environment, which to ensure both environments are identical. They'd really have to invest in **Infrastructure as Code**.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/Devops_containers.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 This is a HUGE amount of technical debt for a small team which could easily stop any future development or bug fixes for 6 months or more - something that could easily sink 
 the project, team, and potentially the company.
