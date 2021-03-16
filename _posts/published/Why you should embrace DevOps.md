@@ -51,7 +51,7 @@ The 3 tiers representing;
 
 The UI talks to the backend which in turn securely accesses the database.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/Devops image 1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/Devops_image_1.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 During development of the frontend, we need to communicate with the backend, and likewise for the backend to database. 
 The team decides to stand up a shared piece of infrastructure (a single EC2 instance) to run all three layers, which QA can also access to view features.
@@ -100,7 +100,7 @@ Then it happens.
 Everything just slows down and stops. No alarms, no errors, just nothing. Customers are once again adrift, and causing one hell of a Twitter storm. 
 What happened? There were no recent code changes.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS4.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 It turns out that they gained more users than the single EC2 instance could handle. As more users joined and started using Whale, the backend started dumping 
 logs at an increased rate filling up the EC2's file system storage, taking both it and the frontend offline. Something that could have been easily avoided if 
@@ -122,7 +122,7 @@ need to set up and configure:
 To make matters worse they're still running on a single environment - so either they'd have to make all of these changes on their "production" environment, 
 or spin up a separate isolated development environment, which to ensure both environments are identical. They'd really have to invest in **Infrastructure as Code**.
 
-![post-thumb]({{site.baseurl}}/assets/images/blog/DevOPS4.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
+![post-thumb]({{site.baseurl}}/assets/images/blog/){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
 This is a HUGE amount of technical debt for a small team which could easily stop any future development or bug fixes for 6 months or more - something that could easily sink 
 the project, team, and potentially the company.
