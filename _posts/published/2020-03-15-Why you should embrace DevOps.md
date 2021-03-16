@@ -2,7 +2,7 @@
 layout: post
 title: Why you should embrace DevOps
 date: 2020-11-20
-image: 
+image: Devops2.png
 author: jhole89
 tags: startups, culture
 ---
