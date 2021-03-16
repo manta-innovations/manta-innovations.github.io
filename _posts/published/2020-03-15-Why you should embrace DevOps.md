@@ -41,7 +41,7 @@ these fundamentals has exponentially increased. It can cause a great amount of r
 Let's look at a real life example to see how these principles can be easily overlooked, and the consequences of offsetting DevOps to a later stage. 
 The example is loosely inspired by a project that I was bought on to work at a late stage, though largely exaggerated for comedic effect.
 
-## Case study - Project Whale
+### Case study - Project Whale
 
 Say we have a standard 3 tier application called project Whale.
 The 3 tiers representing;
@@ -86,11 +86,12 @@ Except now customers are complaining more than before, because they can't login 
 Yup, they forgot about the data. While they were able to get the database running on the new EC2, they forgot about the customer account data that had 
 been written to the old database on the old instance - this is a fresh database without any customer information.
 
-## BATTLESTATIONS!!!!
+### BATTLESTATIONS!!!!
 
 As fires seem to spread they realise their mistake, they should have isolated the database from the rest of the stack, so they could deploy any 
 number of EC2 instances running Whale and simply connect it to a persistent database. But none of them are database or networking experts and 
-unsure how to expose the database connection across servers - this is where Infrastructure as Code could have really helped.
+unsure how to expose the database connection across servers - this is where **Infrastructure as Code** could have really helped.
+
 Let's skip forward a few days, all the fires are now just smouldering pits. They managed to provision a managed database service in the form of 
 AWS RDS and got some help with the networking. Whale is really gaining traction, and customers love it, then overnight the user base explodes. 
 They go from tens of customers to a few thousand and are featured on the front page of Reddit.
@@ -127,38 +128,38 @@ or spin up a separate isolated development environment, which to ensure both env
 This is a HUGE amount of technical debt for a small team which could easily stop any future development or bug fixes for 6 months or more - something that could easily sink 
 the project, team, and potentially the company.
 
-## How DevOps principles could have helped?
+### How DevOps principles could have helped?
 
 Now, as I said, this isn't about Waterfall design, but more about involving DevOps principles from the start. By applying DevOps principles from the 
 beginning they could have avoided some of these situations.
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/Devops_Benefits.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
-By embracing **Continuous Integration** they could have:
+By embracing *Continuous Integration* they could have:
 - Ensured that any code integrated back to their main branch be fully tested prior to deployment; avoiding small bugs interfering with the customer experience.
 
-By embracing **Continuous Testing** they could have:
+By embracing *Continuous Testing* they could have:
 - Created isolated Development, QA, and Production environments. This would have ensured that development versions of Whale could be 
 deployed and acceptance tested, rather than pushing untested versions onto their live customer facing Production environment.
 
-By embracing **Infrastructure** they could have:
+By embracing *Infrastructure* they could have:
 - Spun up a managed database, such as RDS, instead of running their own on the EC2 server; avoiding losing valuable customer data.
 - Leveraged container autoscaling to easily scale horizontally, instead of running everything on a single server; avoiding outages due to increased customer usage.
 - Codified their cloud estate using IaC (Infrastructure as Code) so that they could easily provision multiple dev/qa/prod environments, rather than trying 
 to repeat months old work to manually configure a second environment.
 
-By embracing **Monitoring** they could have:
+By embracing *Monitoring* they could have:
 - Shipped logs to persistent storage such as CloudWatch, instead of leaving them on the single server; avoiding filling up the local application 
 storage and taking Whale offline.
 
-By embracing both **Release Management** and **Continuous Delivery** they could have:
+By embracing both *Release Management* and *Continuous Delivery* they could have:
 Eased the release and roll out of the different layers in isolation; avoiding the lengthy rewrite to separate the backend and frontend layers, 
 and enabling each layer to be developed at its own cadence.
 
 All of these problems could have been avoided if they had merely considered the wider picture outside of their own application code, and embracing 
 these principles from the beginning, when the cost and burden would have been mere hours, rather than months.
 
-## Summary
+### Summary
 To me this is one of the biggest strengths of DevOps; by embracing DevOps principles we start thinking at a larger scale and building applications 
 in a more holistic view. DevOps doesn't require teams of DevOps engineers setting barriers or lengthy processes; it just requires individuals and 
 teams to embrace those principles to build better, more scalable, and robust systems.
