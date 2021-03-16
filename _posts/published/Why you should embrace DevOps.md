@@ -176,7 +176,7 @@ development are two pieces of the same puzzle. They need to be done together, in
 later date, your product could already be dead in the water.
 
 Do you have any experiences of where DevOps was applied a little too late? If you are interested in learning more about DevOps, 
-please check out my other blogs on my website, Manta Innovations and reach out to me on Twitter @ Joel Lutman.
+please check out my other blogs on my website, [Manta Innovations](https://manta-innovations.co.uk/blog) and reach out to me on Twitter at [Joel Lutman](https://twitter.com/JoelLutman).
 
 xx Image 7
 
