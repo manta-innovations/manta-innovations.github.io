@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Why you should embrace DevOps
-date: 2020-11-20
+date: 2021-03-15uPD
 image: Devops2.png
 author: jhole89
-tags: startups, culture
+tags: DevOPS
 ---
 
 *A cautionary tale of DevOps negligence & why it should be at the heart of any project*
