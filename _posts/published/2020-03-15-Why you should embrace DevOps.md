@@ -66,7 +66,7 @@ configured by hand as and when the team realised they needed them.
 They push the latest versions of the frontend and backend, clean out the database, and project Whale goes live.
 
 As the champagne pours they start getting emails from customers about bugs in the frontend system. Small stuff, nothing that stops business, 
-but things that could have easily been discovered if they'd invested in **continuous testing**, and it's enough that requires a new version of 
+but things that could have easily been discovered if they'd invested in continuous testing, and it's enough that requires a new version of 
 Whale to be deployed. Except now they've got customers on the live system, and deploying a new version means taking the old one offline while they switch over.
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/DevOps5-scott-unsplash.jpg){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
@@ -79,7 +79,7 @@ They're left with a couple options:
 The latter is clearly the best option for reducing downtime and keeping people happy, however upon doing this they realise all 
 those little packages and utilities need to be set up again and reconfigured, and the last time anyone did this was 4 months ago. 
 They documented it though, so even though it takes hours they're able to get the new EC2 up with the new version of Whale deployed - this 
-is where **release management** would have really been beneficial right?
+is where release management would have really been beneficial right?
 
 Except now customers are complaining more than before, because they can't login and are being told that they don't have an account - the database!
 
@@ -90,7 +90,7 @@ been written to the old database on the old instance - this is a fresh datab
 
 As fires seem to spread they realise their mistake, they should have isolated the database from the rest of the stack, so they could deploy any 
 number of EC2 instances running Whale and simply connect it to a persistent database. But none of them are database or networking experts and 
-unsure how to expose the database connection across servers - this is where **Infrastructure as Code** could have really helped.
+unsure how to expose the database connection across servers - this is where Infrastructure as Code could have really helped.
 
 Let's skip forward a few days, all the fires are now just smouldering pits. They managed to provision a managed database service in the form of 
 AWS RDS and got some help with the networking. Whale is really gaining traction, and customers love it, then overnight the user base explodes. 
@@ -109,7 +109,7 @@ they'd shipped logs off to a **Monitoring** solution.
 
 Now they need to work out how to scale Whale over multiple EC2 instances at once, and how to get the logs off of the local EC2 file system to somewhere else. 
 All while Whale is currently offline, and they still haven't got an automated solution for deploying new versions without users experiencing some downtime. 
-This would have been a trivial task if they had embraced **continuous delivery** and used containers to run Whale's individual layers on ECS or Fargate - where 
+This would have been a trivial task if they had embraced continuous delivery and used containers to run Whale's individual layers on ECS or Fargate - where 
 shipping logs and autoscaling is given out of the box.
 
 So now the team is left trying to split the frontend and backend, and refactor both applications to run in containers. Then on the infrastructure side they 
@@ -121,7 +121,7 @@ need to set up and configure:
 - Deployment strategies for rolling out new versions.
 
 To make matters worse they're still running on a single environment - so either they'd have to make all of these changes on their "production" environment, 
-or spin up a separate isolated development environment, which to ensure both environments are identical. They'd really have to invest in **Infrastructure as Code**.
+or spin up a separate isolated development environment, which to ensure both environments are identical. They'd really have to invest in Infrastructure as Code.
 
 ![post-thumb]({{site.baseurl}}/assets/images/blog/Devops_containers.png){:class="img-fluid rounded float mx-auto mb-2" :height="auto" width="60%"}
 
