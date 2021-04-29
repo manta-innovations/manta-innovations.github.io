@@ -253,6 +253,17 @@ portfolio-items:
 # Testimonials Section
 
 testimonial-items:
+  - name: "Clint Bidlack"
+    image: "assets/images/testimonial/client-clint.png"
+    designation: "CTO, ActivePrime Ltd"
+    content: "Joel is fabulous. he's your infrastructure guy! We will absolutely work with him again! He has been an
+    incredible addition to our team over the past few months and we definitely plan on leveraging his skills in the
+    future. It's rather rare to find a great technologist who is also great at communication and setting and keeping
+    agreements. Joel does all that. He increased our back end python testing discipline, put in place pipelines for
+    automation on GitLab, configured sophisticated Terraform based AWS automation, re-built a python based rules
+    engine/service, and much more. Thanks Joel for working with us and helping us get to a next level of development
+    professionalism."
+
   - name: "Stephan Heitmeyer"
     image: "assets/images/testimonial/client-stephan.jpeg"
     designation : "Senior Solutions Architect, Reed Business Information"
